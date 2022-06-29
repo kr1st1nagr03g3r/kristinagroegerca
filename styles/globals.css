@@ -9,6 +9,7 @@ body {
   background-color: #eceff7;
   color: #1d1d1f;
   font-size: 19px;
+  font-display: block; /* Fix Font Flickering */
 }
 
 a {
@@ -65,20 +66,33 @@ p.legal {
   margin: 9.99px 0px 23.75px 0px;
 }
 
-
-
-
-
-
+/* Container Comopnent, 776px wide, centered */
 .sevenSevenSix {
   width: 776px;
-  /* max-height: 454px; */
   margin: 0 auto;
-  background-color: lightgrey;
   display: flex;
   flex-direction: column;
-  padding: 60px;
+  padding: 30px 0;
   align-content: flex-start;
   justify-content: center;
   align-items: flex-start;
+}
+
+/* Hero Component, full width, text aligned with container left-edge */
+.heroInner {
+  display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 1;
+    width: 776px;
+    margin: 0 auto;
+    padding: 30px 0px;
+}
+
+.heroOuter {
+  background-color: darkgrey;
+  width: 100vw;
+  padding-top: 140px;
 }
