@@ -56,13 +56,11 @@
     height: 15px;
     left: 25px;
     top: 12px;
-    border:2px solid grey;
+    border:1px solid grey;
 }
 
 .space {
     padding: 0 30px;
+    color: #403e3e;
 }
 
-.logo {
-    padding-left: 0px;
-}
