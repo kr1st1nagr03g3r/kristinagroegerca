@@ -13,11 +13,11 @@ class Navigation extends React.Component {
             <div className={styles.navOuter}>
             <div className={styles.navInner}>
                 <Eyeball className={styles.logo}/>
-                <Link href="#" ><p className={styles.space}>Development</p></Link>           
-                <Link href="#" ><p className={styles.space}>Design</p></Link>
-                <Link href="#" ><p className={styles.space}>Contact</p></Link>
-                <Link href="#" ><p className={styles.space}>CV</p></Link>
-                <Link href="#" ><p className={styles.space}>Github</p></Link>
+                <Link href="#" ><p className={styles.navItem}>Development</p></Link>           
+                <Link href="#" ><p className={styles.navItem}>Design</p></Link>
+                <Link href="#" ><p className={styles.navItem}>Contact</p></Link>
+                <Link href="#" ><p className={styles.navItem}>CV</p></Link>
+                <Link href="#" ><p className={styles.navItem}>Github</p></Link>
 
             </div></div>
 
