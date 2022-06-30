@@ -1,8 +1,8 @@
-
 import Link from "next/link";
 import React from "react";
 import styles from '../styles/Nav.module.css'
 import Eyeball from "./Eyeball";
+
 
 class Navigation extends React.Component {
     state = {}
@@ -29,3 +29,5 @@ class Navigation extends React.Component {
 }
 
 export default Navigation;
+
+
