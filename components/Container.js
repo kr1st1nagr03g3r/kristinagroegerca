@@ -1,6 +1,6 @@
 function Container({ children }) {
     return (
-      <div className="sevenSevenSix">
+      <div className="thicc">
           {children}
         </div>
     

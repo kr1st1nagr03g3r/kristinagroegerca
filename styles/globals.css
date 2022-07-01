@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #eceff7;
+  background-color: darkgrey;
   color: #1d1d1f;
   font-size: 19px;
   font-display: block; /* Fix Font Flickering */
@@ -24,13 +24,19 @@ a {
 
 /* Beautiful font stuff  */
 
+h1, h2, h3, h4, h5, h6, p, p.legal {
+  color: #1d1d1f;
+}
+
 h1 {
+  margin-top: 0px;
   font-family: Corben;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1;
   font-size: 4.23rem;
   margin-bottom: 1.25rem;
   margin-block-start: 1 rem;
+  color: #232323;
 }
 
 h2 {
@@ -58,7 +64,6 @@ p {
   font-weight: 400;
   line-height: 27.55px;
   margin-bottom: 23.75px;
-  color: #1d1d1f;
 }
 
 p.legal {
@@ -67,13 +72,17 @@ p.legal {
   margin: 9.99px 0px 23.75px 0px;
 }
 
+p.text-top {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
 /* Container Comopnent, 776px wide, centered */
-.sevenSevenSix {
+.thicc {
   width: 776px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 30px 0;
   align-content: flex-start;
   justify-content: center;
   align-items: flex-start;
@@ -93,7 +102,7 @@ p.legal {
 }
 
 .heroOuter {
-  background-color: darkgrey;
+  background-color: #eceff7;
   width: 100vw;
   padding-top: 140px;
 }

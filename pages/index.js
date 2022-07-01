@@ -1,5 +1,4 @@
 import Head from 'next/head'
-// import Image from 'next/image'
 import styles from '../styles/Animations.module.css'
 import Navigation from '../components/Navigation'
 import Container from '../components/Container'
@@ -20,11 +19,16 @@ export default function Home() {
       </Head>
       <Navigation />
       <Hero>
-        <h1>Web Developer<br></br>
-          &amp; Designer.</h1>
-        <p>Idk wtf to say here
-        Kristina is a UI and UX developer &amp; designer who has pushed pixels and made web products since 2012. 
-        I&apos;ve spent a large amount of that time working on various CMS&apos;s, primarily Adobe Experience Manager.
+      <p className="text-top">Hello, there. I&apos;m Kristina. 👋🏻 </p>
+        <h1>Creative<br></br>
+          Developer.</h1>
+        <p> I&apos;m a UI / UX developer & designer with over 10 years of experience. 
+       
+        I build human-centered digital experiences with a focus on accessibility. 
+        
+       I have experience working on interaction-design, consise documentation, solution-based communication, digital illustration & animation, and content creation.
+        
+       {/* <button> I&apos;m currently open to job opportunities.</button> */}
       </p>
       </Hero>
       <Container>

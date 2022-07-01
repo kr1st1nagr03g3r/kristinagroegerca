@@ -29,4 +29,65 @@
       transform: scale(20) translate3D(100vw, -100vh, 0) rotate(0);
     }
   }
+
+  /* Animate Navigation UP on scroll */
   
+  /* Animate navigation up when scrolling */
+
+  .navOuter {
+    height: 140px;
+    width: 100vw;
+    background-color: #eceff7;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    /* box-shadow: 4px 3px 20px 3px grey; */
+  }
+
+.animateNav {
+  animation-duration: 0.5s;
+  animation-name: animateNav;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes animateNav {
+  from {
+    height: 140px;
+    background-color: pink;
+    transition: all 500ms cubic-bezier(0.420, 0.000, 1.000, 1.000); /* ease-in */
+
+transition-timing-function: cubic-bezier(0.420, 0.000, 1.000, 1.000); /* ease-in */
+  }
+
+  to {
+   height: 32px;
+   background-color: pink;
+  }
+}
+
+.animateNavOut {
+    animation-duration: 0.5s;
+    animation-name: animateNavOut;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+@keyframes animateNavOut {
+  from {
+    height: 32px;
+    background-color: pink;
+  }
+
+  to {
+    height: 140px;
+   background-color: pink;
+  }
+}
