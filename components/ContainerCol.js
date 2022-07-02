@@ -1,6 +1,6 @@
 function Container({ children }) {
     return (
-      <div className="thicc">
+      <div className="thiccCol">
           {children}
         </div>
     
@@ -8,3 +8,4 @@ function Container({ children }) {
   }
 
   export default Container;
+  

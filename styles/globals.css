@@ -78,7 +78,17 @@ p.text-top {
 }
 
 /* Container Comopnent, 776px wide, centered */
-.thicc {
+.thiccRow {
+  width: 776px;
+  margin: 0 auto;
+  display: flex;
+flex-direction: row;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.thiccCol {
   width: 776px;
   margin: 0 auto;
   display: flex;
@@ -87,6 +97,8 @@ p.text-top {
   justify-content: center;
   align-items: flex-start;
 }
+
+
 
 /* Hero Component, full width, text aligned with container left-edge */
 .heroInner {
@@ -104,6 +116,6 @@ p.text-top {
 .heroOuter {
   background-color: #eceff7;
   width: 100vw;
-  padding-top: 140px;
+  padding-top: 90px;
 }
 

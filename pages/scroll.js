@@ -1,7 +1,7 @@
 // import { useRef, useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import styles from '../styles/Animations.module.css';
-import Navigation from '../components/Navigation'
+
 
 export default function Home() {
     const { ref: myRef, inView: myElementIsVisible } = useInView();

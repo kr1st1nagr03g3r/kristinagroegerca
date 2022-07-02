@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Animations.module.css'
 import Navigation from '../components/Navigation'
-import Container from '../components/Container'
+import ContainerCol from '../components/ContainerCol'
 import Hero from '../components/Hero'
 import { useInView } from 'react-intersection-observer';
 
@@ -31,22 +31,22 @@ export default function Home() {
        {/* <button> I&apos;m currently open to job opportunities.</button> */}
       </p>
       </Hero>
-      <Container>
+      <ContainerCol>
         <h3 >Id aliqua magna esse sunt. Aliqua officia enim veniam pariatur.</h3>
         <p>Incididunt sunt pariatur in velit Lorem eiusmod non. Consectetur incididunt deserunt enim adipisicing ut cupidatat elit est labore officia sint in ipsum enim. Mollit enim quis ea mollit dolor proident est veniam tempor nisi deserunt. Voluptate id voluptate amet cupidatat excepteur minim ipsum aliqua incididunt et laborum culpa ut.</p>
 
-      </Container>
-      <Container>
+      </ContainerCol>
+      <ContainerCol>
         <h3>Id aliqua magna esse sunt. Aliqua officia enim veniam pariatur.</h3>
         <p>Incididunt sunt pariatur in velit Lorem eiusmod non. Consectetur incididunt deserunt enim adipisicing ut cupidatat elit est labore officia sint in ipsum enim. Mollit enim quis ea mollit dolor proident est veniam tempor nisi deserunt. Voluptate id voluptate amet cupidatat excepteur minim ipsum aliqua incididunt et laborum culpa ut.</p>
-      </Container>
-      <Container>
+      </ContainerCol>
+      <ContainerCol>
       <span className={`${styles.rocket} ${magicSectionIsVisible ? styles.animateRocket : ''}`}>
                             🚀
                         </span>
         <h3 ref={magicSectionRef}>Id aliqua magna esse sunt. Aliqua officia enim veniam pariatur.</h3>
         <p>Incididunt sunt pariatur in velit Lorem eiusmod non. Consectetur incididunt deserunt enim adipisicing ut cupidatat elit est labore officia sint in ipsum enim. Mollit enim quis ea mollit dolor proident est veniam tempor nisi deserunt. Voluptate id voluptate amet cupidatat excepteur minim ipsum aliqua incididunt et laborum culpa ut.</p>
-      </Container>
+      </ContainerCol>
 
     </div>
   )
