@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Animations.module.css'
 import Navigation from '../components/Navigation'
-import ContainerCol from '../components/ContainerCol'
-import Hero from '../components/Hero'
 import { useInView } from 'react-intersection-observer';
+import { Container, Button } from '@mui/system';
 
 
 
@@ -18,35 +17,34 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <Hero>
-      <p className="text-top">Hello, there. I&apos;m Kristina. 👋🏻 </p>
+      <Container>
+        {/* <h1 className="font-serif">UIX Developer<br></br>& Designer</h1>
+      <h2>Reprehenderit nisi mollit cupidatat commodo aliqua consequat ut.</h2> */}
+        <h3 className="font-sans">UIX<br></br>Developer & Designer</h3>
+
+        <p> I&apos;m a UI / UX developer & designer with over 10 years of experience building human-centered digital experiences with a focus on accessibility. Besides dev and design, I specialize in interaction-design, documentation, solution-based communication, digital illustration / animation, and content creation.
+        </p>
+        <button>I&apos;m currently open to job opportunities.</button>
+
+
+        <p><small>Consectetur enim aute et magna duis non enim duis do proident dolor proident consequat occaecat. Ullamco sint aliquip ipsum cillum id do do anim laboris ut sint ipsum. Ut ullamco nostrud magna cillum.</small></p>
+
+        <h4 >Reprehenderit nisi mollit cupidatat commodo aliqua consequat ut.</h4>
+        <h5>Reprehenderit nisi mollit cupidatat commodo aliqua consequat ut.</h5>
+      </Container>
+      <Container>
+        <p className="text-top">Hello, there. I&apos;m Kristina. 👋🏻 </p>
         <h1>Creative<br></br>
           Developer.</h1>
-        <p> I&apos;m a UI / UX developer & designer with over 10 years of experience. 
-       
-        I build human-centered digital experiences with a focus on accessibility. 
-        
-       I have experience working on interaction-design, consise documentation, solution-based communication, digital illustration & animation, and content creation.
-        
-       {/* <button> I&apos;m currently open to job opportunities.</button> */}
-      </p>
-      </Hero>
-      <ContainerCol>
-        <h3 >Id aliqua magna esse sunt. Aliqua officia enim veniam pariatur.</h3>
-        <p>Incididunt sunt pariatur in velit Lorem eiusmod non. Consectetur incididunt deserunt enim adipisicing ut cupidatat elit est labore officia sint in ipsum enim. Mollit enim quis ea mollit dolor proident est veniam tempor nisi deserunt. Voluptate id voluptate amet cupidatat excepteur minim ipsum aliqua incididunt et laborum culpa ut.</p>
 
-      </ContainerCol>
-      <ContainerCol>
-        <h3>Id aliqua magna esse sunt. Aliqua officia enim veniam pariatur.</h3>
-        <p>Incididunt sunt pariatur in velit Lorem eiusmod non. Consectetur incididunt deserunt enim adipisicing ut cupidatat elit est labore officia sint in ipsum enim. Mollit enim quis ea mollit dolor proident est veniam tempor nisi deserunt. Voluptate id voluptate amet cupidatat excepteur minim ipsum aliqua incididunt et laborum culpa ut.</p>
-      </ContainerCol>
-      <ContainerCol>
+      </Container>
+      <Container></Container>
       <span className={`${styles.rocket} ${magicSectionIsVisible ? styles.animateRocket : ''}`}>
-                            🚀
-                        </span>
-        <h3 ref={magicSectionRef}>Id aliqua magna esse sunt. Aliqua officia enim veniam pariatur.</h3>
-        <p>Incididunt sunt pariatur in velit Lorem eiusmod non. Consectetur incididunt deserunt enim adipisicing ut cupidatat elit est labore officia sint in ipsum enim. Mollit enim quis ea mollit dolor proident est veniam tempor nisi deserunt. Voluptate id voluptate amet cupidatat excepteur minim ipsum aliqua incididunt et laborum culpa ut.</p>
-      </ContainerCol>
+        🚀
+      </span>
+      <h3 ref={magicSectionRef}>Id aliqua magna esse sunt. Aliqua officia enim veniam pariatur.</h3>
+      <p>Incididunt sunt pariatur in velit Lorem eiusmod non. Consectetur incididunt deserunt enim adipisicing ut cupidatat elit est labore officia sint in ipsum enim. Mollit enim quis ea mollit dolor proident est veniam tempor nisi deserunt. Voluptate id voluptate amet cupidatat excepteur minim ipsum aliqua incididunt et laborum culpa ut.</p>
+
 
     </div>
   )
