@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import styles from '../styles/Animations.module.css';
 
 
-export default function Home() {
+export default function Scroll() {
     const { ref: myRef, inView: myElementIsVisible } = useInView();
     const { ref: magicSectionRef, inView: magicSectionIsVisible } = useInView();
 
