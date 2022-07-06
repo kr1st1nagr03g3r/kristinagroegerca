@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import ReactDOM from "react-dom";
 import useMightyMouse from "react-hook-mighty-mouse";
 import styles from '../styles/Eyeball.module.css'
-import { Svg, Circle, Rect, Ellipse } from 'react-svg-path';
+// import { Svg, Circle, Rect, Ellipse } from 'react-svg-path';
 
 
 const EyesFollow = () => {
