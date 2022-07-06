@@ -12,16 +12,17 @@ export default function Hero({ children }) {
                 <h1 className={`font-serif ${styles.hero}`}>UIX Developer & Designer</h1>
                 <p className="hero">I am a UI & UX developer / designer with over 10 years of experience. I build human-centered digital experiences with a focus on accessibility, interaction, and ease of use. I am no stranger to: writing technical documentation, 
                 visualizing user-flow, and some more stuff.</p>
+{/* Button Option:
                 <div className={styles.buttons}>
-                    {/* <div className={styles.content}>
+                    <div className={styles.content}>
                         <Button className="button-white">Available for Hire</Button>
                         <Date className={styles.date}></Date>
-                    </div> */}
+                    </div>
                     <div className={styles.content}>
                         <Button className={styles.buttonBlack}>See What I Can Do</Button>
                         <Date className={styles.date}></Date>
                     </div>
-                </div>
+                </div> */}
             </Container>
         </Container>
 

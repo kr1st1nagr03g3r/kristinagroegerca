@@ -4,7 +4,7 @@ import Navigation from '../components/Navigation'
 import { useInView } from 'react-intersection-observer';
 import { Container } from '@mui/system';
 import Hero from '../components/Hero';
-import Button from '../components/Button';
+import Typewriter from '../components/Typewriter';
 
 
 export default function Home() {
@@ -18,6 +18,7 @@ export default function Home() {
       </Head>
       <Navigation />
       <Hero></Hero>
+      <Typewriter><small>I&apos;m currently open to new opportunities.</small></Typewriter>
       <Container></Container>
       {/* I&apos;m a UI / UX developer & designer with over 10 years of experience building human-centered digital experiences with a focus on accessibility. Besides dev and design, I specialize in interaction-design, technical & style system documentation, solution-based communication, digital illustration / animation, and content creation. */}
       <Container>

@@ -5,11 +5,25 @@
   flex-wrap: nowrap;
   align-content: center;
   align-items: center;
-  justify-content: flex-start;
-  font-weight: 700;
+  justify-content: flex-end;
+  padding: 10px;
+  margin: 10px;
+  /* font-size: 1.618rem; */
+
 }
 
 .navItems {
-  padding-right: 2rem;
+  padding-right: 30px;
+
   font-weight: 700;
+  letter-spacing: 1px;
+
+  /* box-shadow: 3px 3px 15px 4px white;
+  border: 1px dotted white;
+  border-radius: 40px;
+  background-opacity: 20%; */
+}
+
+:hover.navItems {
+text-decoration: underline;
 }
