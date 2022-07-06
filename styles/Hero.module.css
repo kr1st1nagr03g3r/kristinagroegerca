@@ -35,8 +35,16 @@ h1.hero {
     justify-content: space-evenly;
 }
 
-.tempButton {
-    background: black;
-    color: white;
-    border: 3px solid white;
-  }
+.buttonBlack {
+    border: 3px solid black;
+    padding: 15px 30px;
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+    font-weight: bolder;
+    box-shadow: 3px 3px black;
+    font-family: 'Asul';
+    font-size: 22px;
+    text-transform: none;
+    margin: 30px 0px 15px 0px;  
+}

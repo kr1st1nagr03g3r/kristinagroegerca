@@ -5,6 +5,6 @@ export default function Today() {
   const date = `${current.getMonth()+1}/${current.getDate()}/${current.getFullYear()}`;
   
   return (
-<small>Updated: {date}</small>
+<small>Available for hire today ↪ {date}</small>
   );
 }
