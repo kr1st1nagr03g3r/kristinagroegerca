@@ -9,7 +9,7 @@
   
   .typing {
     width: 38ch;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    animation: typing 2s steps(22), blink .5s step-end infinite alterernate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;

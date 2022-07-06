@@ -6,22 +6,15 @@
   align-content: center;
   align-items: center;
   justify-content: flex-end;
-  padding: 10px;
-  margin: 10px;
+  border-bottom: 3px solid black;
   /* font-size: 1.618rem; */
 
 }
 
 .navItems {
   padding-right: 30px;
-
   font-weight: 700;
   letter-spacing: 1px;
-
-  /* box-shadow: 3px 3px 15px 4px white;
-  border: 1px dotted white;
-  border-radius: 40px;
-  background-opacity: 20%; */
 }
 
 :hover.navItems {
