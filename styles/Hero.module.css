@@ -1,0 +1,42 @@
+h1.hero {
+    color: #373b45;
+    background-color: inherit;
+}
+
+.hero {   
+    margin: 0px;
+    background-color: #ffffffc2;
+    padding: 30px;
+    min-width: 100%;
+    text-align: center;
+}
+
+.heroInner {
+    padding-bottom: 60px;
+}
+
+.date {
+    padding: 15px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.tempButton {
+    background: black;
+    color: white;
+    border: 3px solid white;
+  }

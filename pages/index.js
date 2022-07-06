@@ -3,8 +3,8 @@ import styles from '../styles/Animations.module.css'
 import Navigation from '../components/Navigation'
 import { useInView } from 'react-intersection-observer';
 import { Container } from '@mui/system';
-import Button from '../components/Button'
-import Date from '../components/Date'
+import Hero from '../components/Hero';
+import Button from '../components/Button';
 
 
 export default function Home() {
@@ -17,37 +17,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <Container disableGutters={true}
-        sx={{
-          margin: '0px',
-          background: '#ffffffc2',
-          padding: '30px',
-          minWidth: '100%',
-        }}>
-        <Container
-          sx={{
-            paddingBottom: '60px',
-          }}>
-          <h3 className="font-sans">UIX<br></br>Developer & Designer</h3>
-          <p> I&apos;m a UI / UX developer & designer with over 10 years of experience building human-centered digital experiences with a focus on accessibility. Besides dev and design, I specialize in interaction-design, technical & style system documentation, solution-based communication, digital illustration / animation, and content creation.
-          </p>
-          <Container 
-          sx={{ 
-          display: 'flex',
-          flexDirection: 'column',
-          flexWrap: 'nowrap',
-          alignItems: 'center',
-          justifyContent: 'center',
-           }}>
-          <Button >Available for Hire.</Button>
-          <Date 
-            sx={{
-              padding: '15px',
-            }}
-          />
-          </Container>
-        </Container>
-      </Container>
+      <Hero></Hero>
+      <Container></Container>
+      {/* I&apos;m a UI / UX developer & designer with over 10 years of experience building human-centered digital experiences with a focus on accessibility. Besides dev and design, I specialize in interaction-design, technical & style system documentation, solution-based communication, digital illustration / animation, and content creation. */}
       <Container>
         <p><small>Consectetur enim aute et magna duis non enim duis do proident dolor proident consequat occaecat. Ullamco sint aliquip ipsum cillum id do do anim laboris ut sint ipsum. Ut ullamco nostrud magna cillum.</small></p>
         <h4 >Reprehenderit nisi mollit cupidatat commodo aliqua consequat ut.</h4>

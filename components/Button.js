@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
-import styles from '../styles/ButtonPink.module.css'
+import styles from '../styles/Buttons.module.css'
 
-export default function ButtonPink({children}) {
+export default function Buttons({children}) {
   return (
 <Button className={styles.button}>{children}</Button>
   );
