@@ -4,10 +4,10 @@ import Navigation from '../components/Navigation'
 import { useInView } from 'react-intersection-observer';
 import { Container } from '@mui/system';
 import Hero from '../components/Hero';
-import Typewriter from '../components/Typewriter';
 import Card from '../components/Card'
 import Image from 'next/image';
 import womanWorking from '../public/woman-working-kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg'
+import Starfield from '../components/animatedAssets/Starfield'
 
 export default function Home() {
   const { ref: magicSectionRef, inView: magicSectionIsVisible } = useInView();
@@ -20,11 +20,12 @@ export default function Home() {
       </Head>
       <Navigation />
       <Hero></Hero>
-      <Typewriter><small>I&apos;m currently open to new opportunities.</small></Typewriter>
+      {/* <Typewriter><small>I&apos;m currently open to new opportunities.</small></Typewriter> */}
+      <Starfield><h1>this is some content</h1>
+      </Starfield>
       <Container></Container>
       {/* I&apos;m a UI / UX developer & designer with over 10 years of experience building human-centered digital experiences with a focus on accessibility. Besides dev and design, I specialize in interaction-design, technical & style system documentation, solution-based communication, digital illustration / animation, and content creation. */}
       <Container className="flex row">
-
       <h2>Minim aliqua eiusmod minim labore sunt irure dolor sit occaecat et.</h2>
       <Card>
       <Image src={womanWorking} alt="a woman typing on a macbook"></Image>
