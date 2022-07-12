@@ -8,6 +8,7 @@ import Card from '../components/Card'
 import Image from 'next/image';
 import womanWorking from '../public/woman-working-kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg'
 import Starfield from '../components/animatedAssets/Starfield'
+import Typewriter from '../components/Typewriter'
 
 export default function Home() {
   const { ref: magicSectionRef, inView: magicSectionIsVisible } = useInView();
@@ -20,7 +21,7 @@ export default function Home() {
       </Head>
       <Navigation />
       <Hero></Hero>
-      {/* <Typewriter><small>I&apos;m currently open to new opportunities.</small></Typewriter> */}
+      <Typewriter><small>I&apos;m currently open to new opportunities.</small></Typewriter>
       <Starfield><h1>this is some content</h1>
       </Starfield>
       <Container></Container>
