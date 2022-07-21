@@ -9,10 +9,10 @@ export default function Eye() {
             <div className={styles.logo}>
 
                 <div className={styles.eye}>
-                    <Image id="eye" src={Images.eye} alt="" width="100" height="100" />
+                    <Image id="eye" src={Images.eye} alt="" width="60" height="60" />
                 </div>
                 <div className={styles.eyeball}>
-                    <Image id="eyeball" src={Images.eyeball} alt="" width="40" height="40" />
+                    <Image id="eyeball" src={Images.eyeball} alt="" width="25" height="25" />
                 </div>
 
             </div>

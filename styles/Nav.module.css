@@ -22,15 +22,6 @@
   text-decoration: underline;
 }
 
-/* .relativeContainer {
-  position: relative;
-}
-
-.relativeContainer {
-  width: 100px;
-  height: 100px;
-} */
-
 .logo {
   display: flex;
   flex-direction: row;
@@ -38,8 +29,6 @@
   align-content: center;
   justify-content: center;
   align-items: center;
-  /* width: 100px;
-  height: 100px; */
   text-align: center;
 }
 
@@ -61,23 +50,23 @@
   0% {
     -webkit-transform: rotate(0);
     transform: rotate(0);
-    transform-origin: 20px 20px;
+    transform-origin: 12px 12px;
   }
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-    transform-origin: 20px 20px;
+    transform-origin: 12px 12px;
   }
 }
 @keyframes rotate {
   0% {
     -webkit-transform: rotate(0);
     transform: rotate(0);
-    transform-origin: 20px 20px;
+    transform-origin: 12px 12px;
   }
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-    transform-origin: 20px 20px;
+    transform-origin: 12px 12px;
   }
 }
