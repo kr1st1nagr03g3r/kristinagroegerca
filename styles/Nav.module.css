@@ -1,3 +1,7 @@
+.max {
+  background: ghostwhite;
+}
+
 .nav {
   display: flex;
   height: 100px;
@@ -5,10 +9,7 @@
   flex-wrap: nowrap;
   align-content: center;
   align-items: center;
-  justify-content: flex-end;
-  /* border-bottom: 3px solid black; */
-  /* font-size: 1.618rem; */
-
+  justify-content: space-between;
 }
 
 .navItems {
@@ -18,5 +19,65 @@
 }
 
 :hover.navItems {
-text-decoration: underline;
+  text-decoration: underline;
+}
+
+/* .relativeContainer {
+  position: relative;
+}
+
+.relativeContainer {
+  width: 100px;
+  height: 100px;
+} */
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  /* width: 100px;
+  height: 100px; */
+  text-align: center;
+}
+
+.eyeball {
+  position: absolute;
+}
+
+.eyeball:hover {
+  -webkit-animation: rotate 1s linear infinite both;
+  animation: rotate 1s linear infinite both;
+}
+
+/**
+ * ----------------------------------------
+ * animation rotate
+ * ----------------------------------------
+ */
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    transform-origin: 20px 20px;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transform-origin: 20px 20px;
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    transform-origin: 20px 20px;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transform-origin: 20px 20px;
+  }
 }
