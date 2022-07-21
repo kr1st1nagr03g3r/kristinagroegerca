@@ -1,54 +1,45 @@
 h1.hero {
-    color: #373b45;
-    background: none;
-}
-
-.hero {   
-    margin: 0px;
-    background: rgb(255,255,255);
-    background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
-    padding: 30px 0px;
-    min-width: 100%;
-    text-align: left;
-}
-
-.heroInner {
-    padding-bottom: 45px;
+  color: #373b45;
+  background: none;
 }
 
 .date {
-    padding: 15px;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
+  padding: 15px;
 }
 
 .buttons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  align-items: center;
 }
 
 .buttonBlack {
-    border: 3px solid black;
-    padding: 15px 30px;
-    color: black;
-    background-color: white;
-    border-radius: 50px;
-    font-weight: bolder;
-    box-shadow: 3px 3px black;
-    font-family: 'Asul';
-    font-size: 22px;
-    text-transform: none;
-    margin: 30px 0px 15px 0px;  
+  border: 3px solid black;
+  padding: 15px 30px;
+  color: black;
+  background-color: white;
+  border-radius: 50px;
+  font-weight: bolder;
+  box-shadow: 3px 3px black;
+  font-family: 'Asul';
+  font-size: 22px;
+  text-transform: none;
+  margin: 30px 0px;
+}
+
+.imageWrapper {
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.heroBox01,
+.heroBox02 {
+  width: 50vw;
 }
