@@ -2,6 +2,9 @@
   padding: 15px;
 }
 
+.imageWrapper {
+}
+
 .buttons {
   display: flex;
   flex-direction: column;
@@ -13,7 +16,7 @@
   border: 3px solid black;
   padding: 15px 30px;
   color: black;
-  background-color: white;
+  background-color: ghostwhite;
   border-radius: 50px;
   font-weight: bolder;
   box-shadow: 3px 3px black;
@@ -37,4 +40,8 @@
 
 .heroBox02 {
   width: 70vw;
+}
+
+img.reactImagesAreBalls {
+  width: 10px;
 }

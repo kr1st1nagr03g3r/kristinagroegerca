@@ -21,11 +21,13 @@ export default function Hero({ children, button }) {
                     <Date className={styles.date}></Date>
                 </div>
             </Box>
+
             <Box className={styles.heroBox02}>
                 <div className={styles.imageWrapper}>
-                    <Image src={Images.personWorkingFromHome} width="1280" height="960" alt="" />
+                    <Image className="reactImagesAreBalls" src={Images.personWorkingFromHome} layout="fill" alt="" />
                 </div>
             </Box>
+
         </Container>
 
 
