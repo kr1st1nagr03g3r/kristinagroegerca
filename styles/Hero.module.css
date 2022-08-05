@@ -40,8 +40,9 @@
 
 .heroBox02 {
   width: 70vw;
+  margin-right: -112px;
 }
 
-img.reactImagesAreBalls {
-  width: 10px;
+span.nobreak {
+  display: block;
 }

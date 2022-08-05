@@ -23,7 +23,7 @@ export default function Home() {
       <Hero>
       </Hero>
 
-      <Starfield><h1>this is some content</h1></Starfield>
+      <Starfield></Starfield>
       <Container></Container>
       {/* I&apos;m a UI / UX developer & designer with over 10 years of experience building human-centered digital experiences with a focus on accessibility. Besides dev and design, I specialize in interaction-design, technical & style system documentation, solution-based communication, digital illustration / animation, and content creation. */}
       <Container className="flex row">
