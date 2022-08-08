@@ -29,7 +29,7 @@ export default function Hero({ }) {
                     <h1 className="font-serif">{props.header}</h1>
                     <p>{props.headertext}</p>
 
-                    <Button className={styles.buttons}>{props.buttontext}&nbsp;<SouthIcon /></Button>
+                    <Button className="buttons">{props.buttontext}&nbsp;<SouthIcon /></Button>
                 </Box>
             </div>
         </Container>

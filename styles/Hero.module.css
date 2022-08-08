@@ -30,25 +30,3 @@
 span.nobreak {
   display: block;
 }
-
-.buttons {
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  align-items: center;
-  border: 3px solid black;
-  padding: 15px 30px;
-  color: black;
-  background-color: #61ccfe;
-  border-radius: 50px;
-  font-weight: bolder;
-  box-shadow: 3px 3px black;
-  font-family: 'Asul';
-  font-size: 22px;
-  text-transform: none;
-  margin: 30px 0px;
-}
-
-.buttons:hover {
-  background-color: #ff326c;
-}
