@@ -1,10 +1,10 @@
-import { Button } from '@mui/joy';
-import Date from '../components/Date';
+import Button from '@mui/material/Button'
 import { Container, Box } from '@mui/system';
 import styles from '../styles/Hero.module.css';
 import Images from "../public/home/index.js";
 import Image from 'next/image';
 import SouthIcon from '@mui/icons-material/South';
+
 
 export default function Hero({ }) {
 
@@ -28,10 +28,8 @@ export default function Hero({ }) {
                 <Box className={styles.heroBox01}>
                     <h1 className="font-serif">{props.header}</h1>
                     <p>{props.headertext}</p>
-                    <div className={styles.buttons}>
-                        <Button className={styles.buttonBlack}>{props.buttontext}&nbsp;<SouthIcon /></Button>
-                        <Date className={styles.date}></Date>
-                    </div>
+
+                    <Button className={styles.buttons}>{props.buttontext}&nbsp;<SouthIcon /></Button>
                 </Box>
             </div>
         </Container>
