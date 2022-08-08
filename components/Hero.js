@@ -15,23 +15,25 @@ export default function Hero({ }) {
     }
 
     return (
-        <Container className={styles.hero}>
-            <Box className={styles.heroBox02}>
-                <div>
-                    <Image className="reactImagesAreBalls"
-                        src={Images.personWorkingFromHome}
-                        alt="an illustration of a woman typing on a computer with her dog underneath her desk sleeping" />
-                </div>
-            </Box>
+        <Container >
+            <div className={styles.hero}>
+                <Box className={styles.heroBox02}>
+                    <div>
+                        <Image className="reactImagesAreBalls"
+                            src={Images.personWorkingFromHome}
+                            alt="an illustration of a woman typing on a computer with her dog underneath her desk sleeping" />
+                    </div>
+                </Box>
 
-            <Box className={styles.heroBox01}>
-                <h1 className="font-serif">{props.header}</h1>
-                <p>{props.headertext}</p>
-                <div className={styles.buttons}>
-                    <Button className={styles.buttonBlack}>{props.buttontext}&nbsp;<SouthIcon /></Button>
-                    <Date className={styles.date}></Date>
-                </div>
-            </Box>
+                <Box className={styles.heroBox01}>
+                    <h1 className="font-serif">{props.header}</h1>
+                    <p>{props.headertext}</p>
+                    <div className={styles.buttons}>
+                        <Button className={styles.buttonBlack}>{props.buttontext}&nbsp;<SouthIcon /></Button>
+                        <Date className={styles.date}></Date>
+                    </div>
+                </Box>
+            </div>
         </Container>
 
 
