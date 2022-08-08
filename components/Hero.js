@@ -6,8 +6,6 @@ import Images from "../public/home/index.js";
 import Image from 'next/image';
 import SouthIcon from '@mui/icons-material/South';
 
-
-
 export default function Hero({ }) {
 
     const props = {
@@ -16,15 +14,18 @@ export default function Hero({ }) {
     }
 
     return (
-        <Container className={styles.hero} >
+        <Container className={styles.hero}>
             <Box className={styles.heroBox02}>
-                <div className={styles.imageWrapper}>
-                    <Image className="reactImagesAreBalls" src={Images.personWorkingFromHome} alt="an illustration of a woman typing on a computer with her dog underneath her desk sleeping" />
+                <div>
+                    <Image className="reactImagesAreBalls"
+                        src={Images.personWorkingFromHome}
+                        alt="an illustration of a woman typing on a computer with her dog underneath her desk sleeping" />
                 </div>
             </Box>
+
             <Box className={styles.heroBox01}>
                 <h1 className="font-serif">{props.header}</h1>
-                <p className="hero">{props.headertext}</p>
+                <p>{props.headertext}</p>
                 <div className={styles.buttons}>
                     <Button className={styles.buttonBlack}>See what I can do&nbsp;<SouthIcon /></Button>
                     <Date className={styles.date}></Date>
@@ -38,7 +39,3 @@ export default function Hero({ }) {
 
     )
 }
-
-        // headertext: 'Hello, there. I\'m Kristina'
-        // Hi, there.I & apos; m a UIX developer & designer with over 10 years of experience.
-        //             I build < span > human & mdash;centered</ > digital experiences with a focus on accessibility, interaction, and ease of use.
