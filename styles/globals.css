@@ -116,23 +116,23 @@ small,
 }
 
 .buttons {
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  align-items: center;
-  border: 3px solid black;
-  padding: 15px 30px;
-  color: black;
-  background-color: #61ccfe;
-  border-radius: 50px;
-  font-weight: bolder;
-  box-shadow: 3px 3px black;
-  font-family: 'Asul';
-  font-size: 22px;
-  text-transform: none;
-  text-decoration: none;
-  margin: 30px 0px;
-  text-transform: capitalize;
+  display: flex !important;
+  flex-direction: row !important;
+  width: fit-content !important;
+  align-items: center !important;
+  border: 3px solid black !important;
+  padding: 15px 30px !important;
+  color: black !important;
+  background-color: #61ccfe !important;
+  border-radius: 50px !important;
+  font-weight: bolder !important;
+  box-shadow: 3px 3px black !important;
+  font-family: 'Asul' !important;
+  font-size: 22px !important;
+  text-transform: none !important;
+  text-decoration: none !important;
+  margin: 30px 0px !important;
+  text-transform: capitalize !important;
 }
 
 .buttons:hover {
