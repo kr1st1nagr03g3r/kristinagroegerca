@@ -9,30 +9,29 @@ import SouthIcon from '@mui/icons-material/South';
 
 
 export default function Hero({ }) {
+
     const props = {
-        header: 'UIX \n Developer \n & Designer',
-        type: "fire",
-        image: "https://charizard.jpg",
+        header: 'UIX Developer \n & Designer',
+        headertext: 'Hello, I\'m Kristina Groeger 👋🏻 . \n I\'m a UIX Developer & Designer with over 10 years of experience. \n I build digital experiences and solutions with a focus on accessibility, interaction, and ease of use.'
     }
 
     return (
-        //  I know I need to deconstruct these children. //
         <Container className={styles.hero} >
+            <Box className={styles.heroBox02}>
+                <div className={styles.imageWrapper}>
+                    <Image className="reactImagesAreBalls" src={Images.personWorkingFromHome} alt="an illustration of a woman typing on a computer with her dog underneath her desk sleeping" />
+                </div>
+            </Box>
             <Box className={styles.heroBox01}>
-                <h1 className="font-serif">UIX<br></br>Developer<br></br>& Designer</h1>
-                <p className="hero">Hello, I&apos;m Kristina! I&apos;m a UIX developer & designer with over 10 years of experience.
-                    I build <span>human&mdash;centered</span> digital experiences with a focus on accessibility, interaction, and ease of use.</p>
+                <h1 className="font-serif">{props.header}</h1>
+                <p className="hero">{props.headertext}</p>
                 <div className={styles.buttons}>
                     <Button className={styles.buttonBlack}>See what I can do&nbsp;<SouthIcon /></Button>
                     <Date className={styles.date}></Date>
                 </div>
             </Box>
 
-            <Box className={styles.heroBox02}>
-                <div className={styles.imageWrapper}>
-                    <Image className="reactImagesAreBalls" src={Images.personWorkingFromHome} alt="" />
-                </div>
-            </Box>
+
 
         </Container>
 
@@ -40,3 +39,6 @@ export default function Hero({ }) {
     )
 }
 
+        // headertext: 'Hello, there. I\'m Kristina'
+        // Hi, there.I & apos; m a UIX developer & designer with over 10 years of experience.
+        //             I build < span > human & mdash;centered</ > digital experiences with a focus on accessibility, interaction, and ease of use.

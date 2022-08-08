@@ -20,11 +20,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <Hero>
-      </Hero>
+      <Hero />
 
-      <Starfield></Starfield>
-      <Container></Container>
+      <Starfield />
+      <Container />
       {/* I&apos;m a UI / UX developer & designer with over 10 years of experience building human-centered digital experiences with a focus on accessibility. Besides dev and design, I specialize in interaction-design, technical & style system documentation, solution-based communication, digital illustration / animation, and content creation. */}
       <Container className="flex row">
         <h2>Minim aliqua eiusmod minim labore sunt irure dolor sit occaecat et.</h2>

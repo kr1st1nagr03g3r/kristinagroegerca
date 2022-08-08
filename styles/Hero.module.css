@@ -28,19 +28,29 @@
 
 .hero {
   display: flex;
-  align-items: center;
+  align-items: right;
   flex-direction: row;
   padding-top: 30px;
   padding-bottom: 60px;
 }
 
+p.hero {
+  width: 30px;
+}
+
 .heroBox01 {
-  width: 30vw;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: right;
 }
 
 .heroBox02 {
-  width: 70vw;
-  margin-right: -112px;
+  width: 50vw;
 }
 
 span.nobreak {

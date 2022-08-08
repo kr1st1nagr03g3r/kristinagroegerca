@@ -27,6 +27,7 @@ body {
   line-height: 1;
   color: #373b45;
   overscroll-behavior-y: none;
+  background-color: ghostwhite;
   /* background: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89)) */
 }
 
