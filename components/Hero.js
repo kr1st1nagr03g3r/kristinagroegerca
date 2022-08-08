@@ -11,7 +11,7 @@ export default function Hero({ }) {
     const props = {
         header: 'UIX Developer \n & Designer',
         headertext: 'Hello, I\'m Kristina Groeger 👋🏻 . \n I\'m a UIX Developer & Designer with over 10 years of experience. \n I build digital experiences and solutions with a focus on accessibility, interaction, and ease of use.',
-        buttontext: 'Come Have a Look'
+        buttontext: 'Have a Look'
     }
 
     return (
@@ -32,9 +32,6 @@ export default function Hero({ }) {
                     <Date className={styles.date}></Date>
                 </div>
             </Box>
-
-
-
         </Container>
 
 
