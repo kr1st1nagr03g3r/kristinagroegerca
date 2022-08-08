@@ -10,7 +10,8 @@ export default function Hero({ }) {
 
     const props = {
         header: 'UIX Developer \n & Designer',
-        headertext: 'Hello, I\'m Kristina Groeger 👋🏻 . \n I\'m a UIX Developer & Designer with over 10 years of experience. \n I build digital experiences and solutions with a focus on accessibility, interaction, and ease of use.'
+        headertext: 'Hello, I\'m Kristina Groeger 👋🏻 . \n I\'m a UIX Developer & Designer with over 10 years of experience. \n I build digital experiences and solutions with a focus on accessibility, interaction, and ease of use.',
+        buttontext: 'Come Have a Look'
     }
 
     return (
@@ -27,7 +28,7 @@ export default function Hero({ }) {
                 <h1 className="font-serif">{props.header}</h1>
                 <p>{props.headertext}</p>
                 <div className={styles.buttons}>
-                    <Button className={styles.buttonBlack}>See what I can do&nbsp;<SouthIcon /></Button>
+                    <Button className={styles.buttonBlack}>{props.buttontext}&nbsp;<SouthIcon /></Button>
                     <Date className={styles.date}></Date>
                 </div>
             </Box>

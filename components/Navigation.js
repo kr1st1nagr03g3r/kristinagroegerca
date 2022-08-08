@@ -6,8 +6,9 @@ import Eye from "../components/animatedAssets/Eyeball.js"
 export default function Nav() {
     return (
         <>
-            <Container maxWidth className={styles.max} >
-                <Container fixed>
+
+            <div className={styles.max}>
+                <Container>
                     <div className={styles.nav}>
                         <div className={styles.relativeContainer}>
                             <div className={styles.logo}>
@@ -23,7 +24,7 @@ export default function Nav() {
                         </div>
                     </div>
                 </Container>
-            </Container>
+            </div>
         </>
     )
 }
