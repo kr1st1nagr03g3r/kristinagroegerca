@@ -35,6 +35,50 @@
   text-align: center;
 }
 
+.K,
+.R,
+.Ifirst,
+.S,
+.T,
+.Isecond,
+.N,
+.A {
+  transform: rotate(348deg);
+  position: absolute;
+}
+
+.K {
+  left: 108px;
+}
+
+.R {
+  left: 120px;
+}
+
+.Ifirst {
+  left: 130px;
+}
+
+.S {
+  left: 140px;
+}
+
+.T {
+  left: 150px;
+}
+
+.Isecond {
+  left: 160px;
+}
+
+.N {
+  left: 170px;
+}
+
+.A {
+  left: 180px;
+}
+
 .eyeball {
   position: absolute;
 }
