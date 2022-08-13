@@ -10,7 +10,7 @@ export default function Hero({ }) {
 
     const props = {
         header: 'UIX Developer \n & Designer',
-        headertext: 'Hello, I\'m Kristina Groeger 👋🏻 . \n I\'m a UIX Developer & Designer with over 10 years of experience. \n I build digital experiences and solutions with a focus on accessibility, interaction, and ease of use.',
+        headertext: 'Hello, I am Kristina Groeger 👋🏻 . \r I amm a UIX Developer & Designer with over 10 years of experience. \n I build digital experiences and solutions with a focus on accessibility, interaction, and ease of use.',
         buttontext: 'Have a Look'
     }
 
