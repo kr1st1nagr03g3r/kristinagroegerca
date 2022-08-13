@@ -13,7 +13,7 @@ export default function Starfield({ children }) {
 
     return (
         <>
-            <Container className={styles.container}>
+            <Container className={styles.container} maxWidth>
                 <div>
                     <span className={styles.star}>.</span>
                     <span className={styles.star}>.</span>
