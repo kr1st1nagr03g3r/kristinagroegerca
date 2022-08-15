@@ -18,12 +18,14 @@ export default function Home() {
         <title>Kristina Groeger - Web Developer & Designer</title>
         <meta name="🤡" content="Tricks and Treats" />
         <link rel="icon" href="/bitten-apple.png" type="image/png" />
-
       </Head>
+
       <Navigation />
+
       <Hero />
 
       <Starfield />
+
       <Container />
       {/* I&apos;m a UI / UX developer & designer with over 10 years of experience building human-centered digital experiences with a focus on accessibility. Besides dev and design, I specialize in interaction-design, technical & style system documentation, solution-based communication, digital illustration / animation, and content creation. */}
       <Container className="flex row">

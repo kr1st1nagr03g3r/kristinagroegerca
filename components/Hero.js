@@ -19,7 +19,7 @@ export default function Hero({ }) {
             <div className={styles.hero}>
                 <Box className={styles.heroBox02}>
                     <div>
-                        <Image className="reactImagesAreBalls"
+                        <Image
                             src={Images.personWorkingFromHome}
                             alt="an illustration of a woman typing on a computer with her dog underneath her desk sleeping" />
                     </div>
