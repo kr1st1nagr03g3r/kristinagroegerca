@@ -17,7 +17,8 @@ export default function Home() {
       <Head>
         <title>Kristina Groeger - Web Developer & Designer</title>
         <meta name="🤡" content="Tricks and Treats" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/bitten-apple.png" type="image/png" />
+
       </Head>
       <Navigation />
       <Hero />
