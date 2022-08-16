@@ -18,7 +18,7 @@ export default function Starfield({ }) {
         <>
 
 
-            <Container className={` maxWidthLg ${styles.container}`} >
+            <div className={` maxWidthLg ${styles.container}`} >
                 <div>
                     <span className={styles.star}>.</span>
                     <span className={styles.star}>.</span>
@@ -46,7 +46,7 @@ export default function Starfield({ }) {
                     <span className={styles.star}>.</span>
                     <span className={styles.star}>.</span>
                 </div>
-                <div className={styles.whatever}>
+                <Container className={styles.whatever}>
                     <Box className={styles.boxOne}>
                         <div className={styles.content}>
                             <h1 className={`text-white font-serif ${styles.fadeIn}`}>{props.starfieldHead01}</h1>
@@ -256,8 +256,8 @@ export default function Starfield({ }) {
 
                         </div>
                     </Box>
-                </div>
-            </Container>
+                </Container>
+            </div>
         </>
     )
 }
