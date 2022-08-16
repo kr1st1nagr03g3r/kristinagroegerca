@@ -102,9 +102,9 @@ export default function Starfield({ }) {
                         <div className={styles.content}>
                             <h1 className={`text-white font-serif ${styles.fadeIn}`}>{props.starfieldHead01}</h1>
                             <h1 className={`text-white font-serif ${styles.fadeIn}`}>{props.starfieldHead02}</h1>
-
-                            <Button className={` buttons ${styles.buttons}`}>{props.buttontext}</Button>
-
+                            <div className={styles.button}>
+                                <Button className={` buttons ${styles.buttons}`}>{props.buttontext}</Button>
+                            </div>
                         </div>
                     </div>
                 </div>

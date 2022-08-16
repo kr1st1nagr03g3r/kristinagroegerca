@@ -18,10 +18,14 @@
 }
 
 .buttons {
-  border: 3px solid white !important;
   box-shadow: 3px 3px white !important;
+  border: 3px solid white !important;
   background-color: black !important;
   color: #fff !important;
+}
+
+.button {
+  margin-top: 30px;
 }
 
 /* ----------------------------------------------
