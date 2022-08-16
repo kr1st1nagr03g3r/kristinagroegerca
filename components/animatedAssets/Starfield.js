@@ -3,11 +3,13 @@ import Image from 'next/image';
 import Images from '../../public/home/index.js';
 import Button from '@mui/material/Button'
 import Box from '@mui/material/Box'
+import Container from '@mui/material/Container'
 
 export default function Starfield({ }) {
 
     const props = {
-        starfieldHead: 'I am comfortable using a diverse range of tools & tech',
+        starfieldHead01: 'I\'m comfortable with a diverse range of tools & tech',
+        starfieldHead02: '',
         buttontext: 'see more'
     }
 
@@ -16,7 +18,7 @@ export default function Starfield({ }) {
         <>
 
 
-            <div className={` ${styles.container}`} >
+            <Container className={` maxWidthLg ${styles.container}`} >
                 <div>
                     <span className={styles.star}>.</span>
                     <span className={styles.star}>.</span>
@@ -43,19 +45,12 @@ export default function Starfield({ }) {
                     <span className={styles.star}>.</span>
                     <span className={styles.star}>.</span>
                     <span className={styles.star}>.</span>
-
-
-
-
-
-
-
                 </div>
                 <div className={styles.whatever}>
                     <Box className={styles.boxOne}>
                         <div className={styles.content}>
-                            <h1 className={`text-white font-serif ${styles.fadeIn}`}>{props.starfieldHead}</h1>
-                            {/* <h1 className={`text-white font-serif ${styles.fadeIn}`}>{props.starfieldHead02}</h1> */}
+                            <h1 className={`text-white font-serif ${styles.fadeIn}`}>{props.starfieldHead01}</h1>
+                            <h1 className={`text-white font-serif ${styles.fadeIn}`}>{props.starfieldHead02}</h1>
                             <div className={styles.button}>
                                 <Button className={` buttons ${styles.buttons}`}>{props.buttontext}</Button>
                             </div>
@@ -262,7 +257,7 @@ export default function Starfield({ }) {
                         </div>
                     </Box>
                 </div>
-            </div>
+            </Container>
         </>
     )
 }
