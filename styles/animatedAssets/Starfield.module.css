@@ -68,17 +68,9 @@
   animation-duration: 3s;
 }
 
-.positionJS {
-  transform: translate(-220px, -60px);
-}
-
 .gh {
   animation-delay: 1s;
   animation-duration: 3s;
-}
-
-.positionGH {
-  transform: translate(5px, -101px);
 }
 
 .react {
@@ -86,23 +78,31 @@
   animation: rotateScaleUp 30s linear infinite both;
 }
 
-.positionReact {
-  transform: translate(249px, -113px);
-}
-
 .html {
   animation-duration: 2s;
-}
-
-.positionHTML {
-  transform: translate(504px, -155px);
-  text-align: center !important;
 }
 
 p.html5,
 p.css {
   margin-top: 0px;
   text-align: center;
+}
+
+.positionJS {
+  transform: translate(-220px, -60px);
+}
+
+.positionGH {
+  transform: translate(5px, -101px);
+}
+
+.positionReact {
+  transform: translate(249px, -113px);
+}
+
+.positionHTML {
+  transform: translate(504px, -155px);
+  text-align: center !important;
 }
 
 .positionCSS {
@@ -118,6 +118,12 @@ p.css {
   transform: translate(1006px, -146px);
 }
 
+/**
+ * ----------------------------------------
+ * animation floating
+ * ----------------------------------------
+ */
+
 .floating {
   animation-name: floating;
   animation-duration: 3s;
@@ -127,12 +133,6 @@ p.css {
   margin-left: 30px;
   margin-top: 5px;
 }
-
-/**
- * ----------------------------------------
- * animation floating
- * ----------------------------------------
- */
 
 @keyframes floating {
   0% {
@@ -383,6 +383,10 @@ p.css {
  * animation fadeIn
  * ----------------------------------------
  */
+
+.fadeIn {
+  margin: 15px 0px;
+}
 
 @-webkit-keyframes fadeIn {
   0% {
