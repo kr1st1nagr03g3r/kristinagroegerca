@@ -71,7 +71,7 @@ h1.fadeIn {
 .whatever {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-content: center;
   justify-content: center;
   align-items: center;
