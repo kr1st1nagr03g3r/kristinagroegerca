@@ -1,14 +1,13 @@
 import { Container } from "@mui/system"
 import Link from "next/link"
 import styles from '../styles/Nav.module.css'
-import Eye from "../components/animatedAssets/Eyeball.js"
 
 export default function Nav() {
     return (
         <>
 
             <div className={styles.max}>
-                <Container>
+                <Container className={styles.container}>
                     <div className={styles.nav}>
                         <div className={styles.relativeContainer}>
                             <div className={styles.logo}>

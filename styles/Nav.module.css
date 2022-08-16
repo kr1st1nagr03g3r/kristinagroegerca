@@ -5,6 +5,11 @@
   z-index: 10;
 }
 
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .nav {
   display: flex;
   height: 100px;
