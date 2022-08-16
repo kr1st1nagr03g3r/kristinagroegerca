@@ -1,7 +1,8 @@
 /* background: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89)) */
 
-h1.fadeIn {
-  font-size: 4rem;
+h2.fadeIn {
+  color: white;
+  margin: 6px 0px;
 }
 
 .container {
@@ -21,6 +22,20 @@ h1.fadeIn {
   align-content: center;
   justify-content: center;
   align-items: left;
+  width: 80%;
+}
+
+.whatever {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.spaceStuff {
+  position: relative;
 }
 
 .boxOne,
@@ -31,14 +46,13 @@ h1.fadeIn {
 .boxOne {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .boxTwo {
   display: flex;
   align-content: center;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -67,19 +81,6 @@ h1.fadeIn {
  * LOGO animations
  * ----------------------------------------
  */
-
-.whatever {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.spaceStuff {
-  position: relative;
-}
 
 .js {
   animation-duration: 3s;
@@ -418,11 +419,6 @@ p.css {
  * animation fadeIn
  * ----------------------------------------
  */
-
-.fadeIn {
-  margin: 0px;
-  width: 586px;
-}
 
 @-webkit-keyframes fadeIn {
   0% {
