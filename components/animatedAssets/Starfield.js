@@ -79,25 +79,59 @@ export default function Starfield({ }) {
                             <div className={styles.positionHTML}>
                                 <div className={styles.html}>
                                     <Image className="html"
-                                        width={100}
-                                        height={100}
+                                        width={80}
+                                        height={80}
                                         src={Images.html}
                                         alt="White HTML logo"
                                     />
-                                    <p className={styles.html5}>HTML 5</p>
+                                    <p className={styles.html5}>HTML</p>
                                 </div>
                             </div>
-                            {/* <div className={styles.positionCSS}>
+
+                            <div className={styles.positionCSS}>
                                 <div className={styles.css}>
-                                    <Image className="css"
-                                        width={100}
-                                        height={100}
+                                    <Image className="html"
+                                        width={60}
+                                        height={60}
                                         src={Images.css}
                                         alt="White CSS logo"
                                     />
-                                    <p className={styles.html5}>HTML 5</p>
+                                    <p className={styles.html5}>CSS</p>
                                 </div>
-                            </div> */}
+                            </div>
+
+
+
+                            <div className={styles.positionLess}>
+                                <div className={styles.less}>
+                                    <Image className="less"
+                                        width={60}
+                                        height={60}
+                                        src={Images.less}
+                                        alt="White Less logo"
+                                    />
+
+                                </div>
+                            </div>
+
+                            <div className={styles.positionSASS}>
+                                <div className={styles.sass}>
+                                    <Image className="sass"
+                                        width={60}
+                                        height={60}
+                                        src={Images.sass}
+                                        alt="White Sass logo"
+                                    />
+
+                                </div>
+                            </div>
+
+
+
+
+
+
+
                         </div>
                         <div className={styles.content}>
                             <h1 className={`text-white font-serif ${styles.fadeIn}`}>{props.starfieldHead01}</h1>
