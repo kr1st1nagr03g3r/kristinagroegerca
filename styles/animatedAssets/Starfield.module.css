@@ -26,12 +26,12 @@ h2.fadeIn {
 }
 
 .whatever {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
+  position: relative !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-content: center !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .spaceStuff {
@@ -41,6 +41,7 @@ h2.fadeIn {
 .boxOne,
 .boxTwo {
   width: 50%;
+  position: relative;
 }
 
 .boxOne {
