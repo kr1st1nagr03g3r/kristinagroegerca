@@ -134,7 +134,7 @@ small,
 
 /* Scroll Snap */
 
-/* .scroller {
+.scroller {
   height: 80vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
@@ -142,4 +142,4 @@ small,
 
 .scroller div {
   scroll-snap-align: start;
-} */
+}

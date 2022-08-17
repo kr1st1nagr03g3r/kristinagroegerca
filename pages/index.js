@@ -8,11 +8,18 @@ import Card from '../components/Card'
 import Image from 'next/image';
 import womanWorking from '../public/woman-working-kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg'
 import Starfield from '../components/animatedAssets/Starfield'
+import createScrollSnap from 'scroll-snap'
 
 
 
 export default function Home() {
+
+  // Scroll Event Listener
   const { ref: magicSectionRef, inView: magicSectionIsVisible } = useInView();
+
+
+
+
   return (
     <>
       <Head>
