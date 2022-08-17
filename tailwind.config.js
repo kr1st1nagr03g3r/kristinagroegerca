@@ -20,7 +20,7 @@ module.exports = {
         // 'sans': ['Manrope'],
         'mono': ['Source Code Pro', 'SFMono-Regular']
       },
-      
+
 
       height: {
         '500': '25rem',

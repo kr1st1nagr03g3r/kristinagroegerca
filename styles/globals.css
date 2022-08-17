@@ -1,3 +1,7 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 @import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Asul&family=Concert+One&family=Corben:wght@400;700&family=Eczar&family=Fruktur&family=Kavoon&family=Neuton&family=Space+Mono&family=Tillana&family=Work+Sans&display=swap');
 
 /* Key:
@@ -134,12 +138,21 @@ small,
 
 /* Scroll Snap */
 
-.scroller {
-  height: 80vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+.wrapper {
+  position: relative !important;
+  border: 1px solid blue;
 }
 
-.scroller div {
-  scroll-snap-align: start;
+.one,
+.two,
+.three {
+  scroll-snap-align: start !important;
+  padding: 50vh 0 !important;
+}
+
+.wrapper .three {
+  scroll-snap-align: start !important;
+  height: 100vh;
+  position: relative !important;
+  border: 1px solid red;
 }
