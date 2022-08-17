@@ -37,13 +37,7 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
   color: #373b45;
-  /* padding-right: 2rem; */
 }
-
-/* p,
-a {
-  padding-right: 2rem;
-} */
 
 h2,
 h3,
@@ -137,3 +131,15 @@ small,
 .buttons:hover {
   background-color: #ff326c !important;
 }
+
+/* Scroll Snap */
+
+/* .scroller {
+  height: 80vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroller div {
+  scroll-snap-align: start;
+} */

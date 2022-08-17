@@ -15,6 +15,7 @@ const Images = {
     figma: require('../home/figma.svg').default,
     illustrator: require('../home/illustrator.svg').default,
     less: require('../home/less.svg').default,
+    mui: require('../home/mui.svg').default,
     nextjs: require('../home/nextjs.svg').default,
     nodejs: require('../home/nodejs.svg').default,
     npm: require('../home/npm.svg').default,

@@ -118,7 +118,7 @@ h2.fadeIn {
 
 .tailwind,
 .illustrator,
-.bootstrap {
+.mui {
   animation-duration: 5s;
   animation-name: floating;
   animation-iteration-count: infinite;
@@ -144,6 +144,7 @@ p.css {
   margin-top: 0px;
   margin-bottom: 0px;
   text-align: center;
+  color: white;
 }
 
 .positionJS,
@@ -157,7 +158,7 @@ p.css {
 .positionHTML,
 .positionSASS,
 .positionTailwind,
-.positionBootstrap,
+.positionMUI,
 .positionFigma,
 .positionAE,
 .positionIllustrator,

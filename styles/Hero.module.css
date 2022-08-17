@@ -30,3 +30,8 @@
 span.nobreak {
   display: block;
 }
+
+p.pmargin {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}

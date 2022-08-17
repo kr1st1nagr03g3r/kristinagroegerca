@@ -10,7 +10,8 @@ export default function Hero({ }) {
 
     const props = {
         header: 'UIX Developer \n & Designer',
-        headertext: 'Hello, I am Kristina Groeger 👋🏻 . \r I amm a UIX Developer & Designer with over 10 years of experience. \n I build digital experiences and solutions with a focus on accessibility, interaction, and ease of use.',
+        intro: 'Hello, I\'m Kristina Groeger 👋🏻.',
+        headertext: ' I\'m a UIX Developer & Designer with over 10 years of experience. \n I build front-end experiences and solutions with a focus on accessibility, interaction, and ease of use.',
         buttontext: 'Have a Look'
     }
 
@@ -27,8 +28,8 @@ export default function Hero({ }) {
 
                 <Box className={styles.heroBox01}>
                     <h1 className="font-serif">{props.header}</h1>
+                    <p className={styles.pmargin}>{props.intro}</p>
                     <p>{props.headertext}</p>
-
                     <Button className="buttons">{props.buttontext}&nbsp;<SouthIcon /></Button>
                 </Box>
             </div>
