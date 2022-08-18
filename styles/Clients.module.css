@@ -2,3 +2,16 @@
   margin: 60px 0px;
   text-align: center;
 }
+
+.clients {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}

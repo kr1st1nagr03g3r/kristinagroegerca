@@ -1,11 +1,7 @@
-.date {
-  padding: 15px;
-}
-
 .hero {
   display: flex;
   flex-direction: row;
-  padding: 146px 0px;
+  padding: 146px 0px 60px 0px;
 }
 
 .heroBox01,

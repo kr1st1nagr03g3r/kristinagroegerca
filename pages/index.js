@@ -34,7 +34,9 @@ export default function Home() {
 
       <Starfield />
 
-      <Clients />
+      <Container>
+        <h2 className={styles.header}>Major Clientele and Brand Experience</h2>
+      </Container>
 
       <Container >
 

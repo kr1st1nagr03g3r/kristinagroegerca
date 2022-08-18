@@ -4,7 +4,7 @@ import styles from '../styles/HeroWork.module.css';
 import Images from "../public/home/index.js";
 import Image from 'next/image';
 import SouthIcon from '@mui/icons-material/South';
-import Clients from './Clients';
+
 
 
 export default function Hero({ }) {
@@ -29,7 +29,7 @@ export default function Hero({ }) {
                     <div>
                         <Image
                             src={Images.growth}
-                            alt="an illustration of a woman typing on a computer with her dog underneath her desk sleeping" />
+                            alt="A woman climbing the steps of her career" />
                     </div>
                 </Box>
 
