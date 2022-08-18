@@ -4,9 +4,10 @@ import styles from '../styles/Hero.module.css';
 import Images from "../public/home/index.js";
 import Image from 'next/image';
 import SouthIcon from '@mui/icons-material/South';
+import Date from '../components/Date'
 
 
-export default function Hero({ }) {
+export default function Hero({ children }) {
 
     const props = {
         header: 'UIX Developer \n & Designer',
@@ -31,6 +32,7 @@ export default function Hero({ }) {
                     <p className={styles.pmargin}>{props.intro}</p>
                     <p>{props.headertext}</p>
                     <Button className="buttons">{props.buttontext}&nbsp;<SouthIcon /></Button>
+                    <Date />
                 </Box>
             </div>
         </Container>

@@ -23,6 +23,8 @@ const Images = {
     sass: require('../home/sass.svg').default,
     tailwind: require('../home/tailwind.svg').default,
     vercel: require('../home/vercel.svg').default,
+
+    growth: require('../home/growth.svg').default,
 }
 
 export default Images

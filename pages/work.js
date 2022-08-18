@@ -1,15 +1,12 @@
-// import Eyeball from '../components/Eyeball'
-import Starfield from '../components/animatedAssets/Starfield'
+import Navigation from '../components/Navigation'
+import HeroWork from '../components/HeroWork';
 
-export default function Temp() {
 
+export default function Work({ children }) {
     return (
         <>
-
-            {/* <Eyeball /> */}
-            <Starfield />
-
+            <Navigation />
+            <HeroWork />
         </>
     )
 }
-

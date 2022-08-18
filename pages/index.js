@@ -5,6 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import { Container } from '@mui/system';
 import Hero from '../components/Hero';
 import Card from '../components/Card'
+import Clients from '../components/Clients'
 import Image from 'next/image';
 import womanWorking from '../public/woman-working-kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg'
 import Starfield from '../components/animatedAssets/Starfield'
@@ -33,12 +34,14 @@ export default function Home() {
 
       <Starfield />
 
-      <Container className="flex row">
-        <h2 className="text-red-500">Minim aliqua eiusmod minim labore sunt irure dolor sit occaecat et.</h2>
+      <Clients />
+
+      <Container >
+
         <Card>
           <Image src={womanWorking} alt="a woman typing on a macbook"></Image>
           <h3>Aute Lorem adipisicing ad ea amet laboris occaecat sint esse excepteur aute.</h3>
-          <p className="text-lilac">
+          <p>
             Sint aliquip laborum excepteur sunt pariatur enim eiusmod amet ipsum.
           </p></Card>
         <Card>
@@ -57,19 +60,6 @@ export default function Home() {
         <p>Incididunt sunt pariatur in velit Lorem eiusmod non. Consectetur incididunt deserunt enim adipisicing ut cupidatat elit est labore officia sint in ipsum enim. Mollit enim quis ea mollit dolor proident est veniam tempor nisi deserunt. Voluptate id voluptate amet cupidatat excepteur minim ipsum aliqua incididunt et laborum culpa ut.</p>
       </Container>
 
-      <Container>
-        <div className='wrapper'>
-          <div className='one'>
-            Hello, Div1
-          </div>
-          <div className='two'>
-            Hello, Div2
-          </div>
-          <div className='three'>
-            Hello, Div3
-          </div>
-        </div>
-      </Container>
     </>
   )
 }

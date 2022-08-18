@@ -137,22 +137,3 @@ small,
 }
 
 /* Scroll Snap */
-
-.wrapper {
-  position: relative !important;
-  border: 1px solid blue;
-}
-
-.one,
-.two,
-.three {
-  scroll-snap-align: start !important;
-  padding: 50vh 0 !important;
-}
-
-.wrapper .three {
-  scroll-snap-align: start !important;
-  height: 100vh;
-  position: relative !important;
-  border: 1px solid red;
-}
