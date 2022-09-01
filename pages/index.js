@@ -35,7 +35,7 @@ export default function Home() {
       <Starfield />
 
       <Container>
-        <h2 className={styles.header}>Major Clientele and Brand Experience - Test</h2>
+        <h2 className={styles.header}>Major Clientele and Brand Experience</h2>
       </Container>
 
       <Container >
