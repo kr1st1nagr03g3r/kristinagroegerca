@@ -1,12 +1,17 @@
 .hero {
+  background: ghostwhite;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 146px 0px 60px 0px;
 }
 
 .heroBox01,
 .heroBox02 {
   width: 50%;
+}
+
+.content {
+  display: flex;
 }
 
 .heroBox01 {

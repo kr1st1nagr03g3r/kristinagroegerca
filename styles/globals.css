@@ -112,6 +112,10 @@ small,
   font-family: 'Space Mono', monospace;
 }
 
+.white {
+  color: ghostwhite;
+}
+
 .buttons {
   display: flex !important;
   flex-direction: row !important;
