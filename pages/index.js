@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import { Container } from '@mui/system';
 import Hero from '../components/Hero';
 import Card from '../components/Card'
-import Clients from '../components/Clients'
+// import Clients from '../components/Clients'
 import Image from 'next/image';
 import womanWorking from '../public/woman-working-kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg'
 import Starfield from '../components/animatedAssets/Starfield'
