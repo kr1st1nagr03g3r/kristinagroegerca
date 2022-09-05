@@ -79,6 +79,7 @@ END GOLDEN RATIO
 h1 {
   font-size: 4.236rem;
   line-height: 1;
+  margin: 60px 0px 30px 0px;
 }
 
 h2 {
@@ -140,4 +141,8 @@ small,
   background-color: #ff326c !important;
 }
 
-/* Scroll Snap */
+@media only screen and (max-width: 1200px) {
+  .MuiContainer-root {
+    padding: 30px !important;
+  }
+}
