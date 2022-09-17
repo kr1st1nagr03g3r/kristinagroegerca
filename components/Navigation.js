@@ -1,29 +1,47 @@
+
 import { Container } from "@mui/system"
 import Link from "next/link"
-import styles from '../styles/Nav.module.css'
+import { useInView } from 'react-intersection-observer';
 
 export default function Nav() {
     return (
         <>
+            <style jsx>{`
+            a {
+                padding-right: 30px;
+            }
+            .contact {
+                padding-right: 0px !important;
+            }
 
-            <div className={styles.max}>
-                <Container className={styles.container}>
-                    <div className={styles.nav}>
-                        <div className={styles.relativeContainer}>
-                            <div className={styles.logo}>
-                                <Link href="/"><a><i>Kristina Groeger</i></a></Link>
-                            </div>
-                        </div>
+            `} </style>
 
-                        <div className={styles.links}>
-                            <Link href="/"><a className={styles.navItems}>Home</a></Link>
-                            <Link href="/work"><a className={styles.navItems}>Work</a></Link>
-                            <Link href="/about"><a className={styles.navItems} >About</a></Link>
-                            <Link href="/contact"><a className={styles.navItemEnd}>Contact</a></Link>
-                        </div>
+            <Container
+                sx={{
+                    background: 'white',
+                    height: 100,
+                    display: 'flex',
+
+                }} maxWidth={false} disableGutters={true}>
+                <Container sx={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    flexWrap: 'nowrap',
+                    justifyContent: 'space-between',
+                }}>
+                    <div className="logo">
+                        <Link href="/"><a><i>Kristina Groeger</i></a></Link>
+                    </div>
+
+                    <div className="links">
+                        <Link href="/"><a>Home</a></Link>
+                        <Link href="/work"><a>Work</a></Link>
+                        <Link href="/about"><a>About</a></Link>
+                        <Link href="/contact"><a className="contact">Contact</a></Link>
                     </div>
                 </Container>
-            </div>
+            </Container>
+
         </>
     )
 }
