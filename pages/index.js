@@ -39,7 +39,6 @@ export default function Home() {
       </Container>
 
       <Container >
-
         <Card>
           <Image src={womanWorking} alt="a woman typing on a macbook"></Image>
           <h3>Aute Lorem adipisicing ad ea amet laboris occaecat sint esse excepteur aute.</h3>
