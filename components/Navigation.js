@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Container } from '@mui/material'
 import Link from 'next/link'
-import styles from '../styles/navigation.module.css'
+import styles from '../styles/Nav.module.css'
 import { useState } from 'react'
 import NavLinks from '../components/NavLinks'
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded'
@@ -74,7 +74,7 @@ export function Hamburger() {
       <style jsx>{`
         .navBar {
           position: absolute;
-          top: 92px;
+          top: 90px;
           width: 100vw;
         }
         nav {
@@ -93,7 +93,7 @@ export function Hamburger() {
           right: 0;
           width: 0;
           overflow: hidden;
-              max-width: 100vw;
+          max-width: 100vw;
           z-index: 9;
         }
         .menuNav.showMenu {
@@ -104,9 +104,9 @@ export function Hamburger() {
           margin: 30px;
           background: white;
           border: none;
-}
+        }
 @media only screen and (max-width: 900px) {
- 
+
   }}
         }
       `}</style>
@@ -119,6 +119,7 @@ export function Hamburger() {
           justifyContent: 'space-between',
           width: '100vw',
           alignItems: 'center',
+          zIndex: 'modal',
         }}
       >
         <Link href="/">
