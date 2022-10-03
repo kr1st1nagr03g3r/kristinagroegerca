@@ -1,41 +1,19 @@
+import * as React from "react";
+import ScrollWrapper from "../components/ScrollWrapper";
+import { useInView } from "react-intersection-observer";
 
-import React from 'react';
-import styles from '../styles/animatedAssets/AnimateNav.module.css'
-import { useInView } from 'react-intersection-observer';
-import Starfield from '../components/animatedAssets/Starfield';
-import Hero from '../components/Hero';
-import Navigation from "../components/Navigation"
-
-
-
-export default function Component() {
-
-    // const { ref, inView, entry } = useInView({
-    //     /* Optional options */
-    //     threshold: 0.5,
-    // });
-
-
-    // this is how to name the variables so you may use multiple on a page.
-    const {
-        ref: magicSectionRef,
-        inView: magicSectionIsVisible } = useInView({
-            threshold: 0.3,
-        });
-
+export default function Temp() {
+    const { ref, inView } = useInView({
+        threshold: 0
+    });
 
     return (
-        <>
-            <span className={`${styles.rocket} ${magicSectionIsVisible ? styles.animateRocket : ''}`}>
-                🚀
-                <Navigation />
-            </span>
-
-            <Hero />
-            <span ref={magicSectionRef}>
-                <Starfield /></span>
-
-
-        </>
-    )
+        <ScrollWrapper inView={inView}>
+            <div ref={ref} className="inview-block">
+                <h2>
+                    Element is inside the viewport: <strong>{inView.toString()}</strong>
+                </h2>
+            </div>
+        </ScrollWrapper>
+    );
 }
