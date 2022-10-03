@@ -18,8 +18,6 @@ export default function Starfield({ }) {
 
     return (
         <>
-
-
             <div className={` scroller ${styles.container}`} >
                 <section>
                     <span className={styles.star}>.</span>
@@ -222,7 +220,7 @@ export default function Starfield({ }) {
                                                 width={60}
                                                 height={60}
                                                 src={Images.mui}
-                                                alt="White mui logo"
+                                                alt="White MUI logo"
                                             />
                                         </div>
                                     </Link>
