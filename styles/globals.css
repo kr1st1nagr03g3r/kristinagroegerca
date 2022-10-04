@@ -141,8 +141,19 @@ small,
   background-color: #ff326c !important;
 }
 
-@media only screen and (max-width: 1200px) {
-  .MuiContainer-root {
-    padding: 30px !important;
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
+@media only screen and (max-width: 900px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
   }
 }

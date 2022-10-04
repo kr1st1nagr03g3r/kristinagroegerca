@@ -1,0 +1,53 @@
+.statusElement {
+  width: 100vw;
+  position: fixed;
+  background: white;
+}
+.relativeContainer {
+  display: flex;
+}
+
+.logo {
+  margin: 1.38rem 0;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.navItemEnd {
+  padding-right: 0px;
+  text-align: center;
+}
+.testing {
+  display: flex;
+}
+.logoInView {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.navAnimateSmall,
+.navAnimateLarge {
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* MOBILE STYLES */
+@media only screen and (max-width: 900px) {
+  .navAnimateLarge,
+  .navAnimateSmall {
+    display: none !important;
+  }
+}

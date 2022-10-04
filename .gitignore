@@ -32,3 +32,8 @@ yarn-error.log*
 .vercel
 sendgrid.env
 package-lock.json
+/package-lock.json
+/*.json
+.vscode
+/.vscode
+.swc

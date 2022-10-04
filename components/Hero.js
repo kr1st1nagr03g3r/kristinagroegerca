@@ -1,85 +1,81 @@
 import Button from '@mui/material/Button'
-import { Container, Box } from '@mui/system';
-import styles from '../styles/Hero.module.css';
-import Images from "../public/home/index.js";
-import Image from 'next/image';
-import SouthIcon from '@mui/icons-material/South';
+import { Container, Box } from '@mui/system'
+import styles from '../styles/Hero.module.css'
+import Images from '../public/home/index.js'
+import Image from 'next/image'
+import SouthIcon from '@mui/icons-material/South'
 import Date from '../components/Date'
-import Grid from '@mui/material/Grid';
-import { styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
-
+import Grid from '@mui/material/Grid'
+import { styled } from '@mui/material/styles'
+import Paper from '@mui/material/Paper'
 
 export default function Hero({ children }) {
+  const text = {
+    header: 'Front-End Developer & Designer - UIX',
+    headertext:
+      "Hello, I'm Kristina Groeger 👋🏻. I've been building and designing digital experiences for over 10 years. I specialize in user experience, interaction design, CSS-wizardry, and accessibility.",
+    buttontext: 'Have a Look',
+  }
 
+  const Item = styled(Paper)(({ theme }) => ({
+    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : 'ghostwhite',
+    padding: theme.spacing(1),
+    textAlign: 'left',
+  }))
 
-
-    const text = {
-        header: 'Front-End Developer & Designer - UIX',
-        headertext: 'Hello, I\'m Kristina Groeger 👋🏻. I\'ve been building and designing digital experiences for over 10 years. I specialize in user experience, interaction design, CSS-wizardry, and accessibility.',
-        buttontext: 'Have a Look'
-    }
-
-    const Item = styled(Paper)(({ theme }) => ({
-        backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : 'ghostwhite',
-        padding: theme.spacing(1),
-        textAlign: 'left',
-    }));
-
-    return (
-
-        <>
-            <Container >
-                <Box sx={{ flexGrow: 1 }}>
-                    <Grid container className={styles.hero}>
-                        <Grid item xs={12} md={6} >
-                            <Item elevation={0}
-                                sx={{
-                                    flexDirection: 'column',
-                                    display: 'flex',
-                                    alignItems: 'flex-start',
-                                }}
-                            >
-                                <h1 className="font-serif">{text.header}</h1>
-                                <p>{text.headertext}</p>
-                                <div className={styles.button}>
-                                    <Button className="buttons"
-                                        sx={{
-
-                                            textAlign: 'center',
-                                        }}
-                                    >{text.buttontext}&nbsp;<SouthIcon />
-                                    </Button>
-                                </div>
-                                <Date />
-                            </Item>
-                        </Grid>
-                        <Grid item xs={12} md={6} >
-                            <Item elevation={0}
-                                sx={{
-                                    display: 'flex',
-                                    flexDirection: 'row',
-                                    flexWrap: 'wrap',
-                                    alignContent: 'center',
-                                    justifyContent: 'center',
-                                    alignItems: 'center',
-                                }}
-                            >
-                                <Image
-                                    src={Images.personWorkingFromHome}
-                                    alt="an illustration of a woman typing on a computer with her dog underneath her desk sleeping" />
-                            </Item>
-                        </Grid>
-
-                    </Grid>
-                </Box>
-            </Container>
-
-
-
-        </>
-
-    )
+  return (
+    <>
+      <Container>
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container className={styles.hero}>
+            <Grid item xs={12} md={6}>
+              <Item
+                elevation={0}
+                sx={{
+                  flexDirection: 'column',
+                  display: 'flex',
+                  alignItems: 'flex-start',
+                }}
+              >
+                <h1 className="font-serif">{text.header}</h1>
+                <p>{text.headertext}</p>
+                <div className={styles.button}>
+                  <Button
+                    className="buttons"
+                    sx={{
+                      textAlign: 'center',
+                    }}
+                  >
+                    {text.buttontext}&nbsp;
+                    <SouthIcon />
+                  </Button>
+                </div>
+                <Date />
+              </Item>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Item
+                elevation={0}
+                sx={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  flexWrap: 'wrap',
+                  alignContent: 'center',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+              >
+                <Image
+                  src={Images.personWorkingFromHome}
+                  alt="an illustration of a woman typing on a computer with her dog underneath her desk sleeping"
+                />
+              </Item>
+            </Grid>
+          </Grid>
+        </Box>
+      </Container>
+    </>
+  )
 }
 // -webkit - justify - content: flex - end;
 // justify - content: center;
