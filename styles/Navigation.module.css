@@ -2,6 +2,8 @@
   width: 100vw;
   position: fixed;
   background: white;
+  box-shadow: 1px 6px 10px 2px #0000000d;
+  z-index: 10 !important;
 }
 .relativeContainer {
   display: flex;

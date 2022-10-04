@@ -19,10 +19,7 @@ export default function Nav({ inView }) {
             //////# Navigation OutOfView
             <span role="img" aria-label="Outside the viewport">
               {/* ❌ */}
-              <Container
-                className={styles.navAnimateSmall}
-                sx={{ zIndex: 'tooltip' }}
-              >
+              <Container className={styles.navAnimateSmall}>
                 <div className={styles.relativeContainer}>
                   <div className={styles.logoInView}>
                     <Link href="/">
