@@ -1,83 +1,58 @@
 import Button from '@mui/material/Button'
-import { Container, Box } from '@mui/system'
 import styles from '../styles/Hero.module.css'
 import Images from '../public/home/index.js'
 import Image from 'next/image'
 import SouthIcon from '@mui/icons-material/South'
 import Date from '../components/Date'
-import Grid from '@mui/material/Grid'
-import { styled } from '@mui/material/styles'
-import Paper from '@mui/material/Paper'
+import { Box, Container } from '@mui/material'
 
-export default function Hero({ children }) {
-  const text = {
-    header: 'Front-End Developer & Designer - UIX',
-    headertext:
-      "Hello, I'm Kristina Groeger 👋🏻. I've been building and designing digital experiences for over 10 years. I specialize in user experience, interaction design, CSS-wizardry, and accessibility.",
-    buttontext: 'Have a Look',
-  }
-
-  const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : 'ghostwhite',
-    padding: theme.spacing(1),
-    textAlign: 'left',
-  }))
-
+export default function Hero() {
   return (
     <>
-      <Container>
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid container className={styles.hero}>
-            <Grid item xs={12} md={6}>
-              <Item
-                elevation={0}
-                sx={{
-                  flexDirection: 'column',
-                  display: 'flex',
-                  alignItems: 'flex-start',
-                }}
-              >
-                <h1 className="font-serif">{text.header}</h1>
-                <p>{text.headertext}</p>
-                <div className={styles.button}>
-                  <Button
-                    className="buttons"
-                    sx={{
-                      textAlign: 'center',
-                    }}
-                  >
-                    {text.buttontext}&nbsp;
-                    <SouthIcon />
-                  </Button>
-                </div>
-                <Date />
-              </Item>
-            </Grid>
-            <Grid item xs={12} md={6}>
-              <Item
-                elevation={0}
-                sx={{
-                  display: 'flex',
-                  flexDirection: 'row',
-                  flexWrap: 'wrap',
-                  alignContent: 'center',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                }}
-              >
-                <Image
-                  src={Images.personWorkingFromHome}
-                  alt="an illustration of a woman typing on a computer with her dog underneath her desk sleeping"
-                />
-              </Item>
-            </Grid>
-          </Grid>
+      <Container
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          flexWrap: 'wrap',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          height: '100%',
+          padding: '160px 0 60px 0',
+        }}
+      >
+        <Box sx={{ width: '45%' }}>
+          <h1 className="font-serif bold">
+            Front-End Developer<br></br>& Designer - UIX
+          </h1>
+          <p>
+            Hello, I&apos;m Kristina Groeger 👋🏻. <br></br>
+            I&apos;ve been building and designing digital experiences for over
+            10 years. I specialize in user experience, interaction design,
+            CSS-wizardry, and accessibility.
+          </p>
+          <div className={styles.button}>
+            <Button
+              className="buttons"
+              sx={{
+                textAlign: 'center',
+              }}
+            >
+              Have a Look&nbsp;
+              <SouthIcon />
+            </Button>
+          </div>
+          <Date />
+        </Box>
+
+        <Box sx={{ width: '45%' }}>
+          <Image
+            src={Images.personWorkingFromHome}
+            alt="an illustration of a woman typing on a computer with her dog underneath her desk sleeping"
+            width="450"
+            height="450"
+          />
         </Box>
       </Container>
     </>
   )
 }
-// -webkit - justify - content: flex - end;
-// justify - content: center;
-// flex - wrap: nowrap;
-// align - content: flex - end;

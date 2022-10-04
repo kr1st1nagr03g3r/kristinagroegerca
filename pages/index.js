@@ -6,8 +6,10 @@ import { Container } from '@mui/system'
 import Hero from '../components/Hero'
 import Card from '../components/Card'
 import Image from 'next/image'
+import Images from '../public/clients/index.js'
 import womanWorking from '../public/woman-working-kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg'
 import Starfield from '../components/animatedAssets/Starfield'
+import Clientele from '../components/Clientele'
 
 export default function Home() {
   // Scroll Event Listener
@@ -27,20 +29,26 @@ export default function Home() {
 
       <Starfield />
 
-      <Container>
-        <h2 className={styles.header}>Major Clientele and Brand Experience</h2>
-      </Container>
+      <Clientele />
 
       <Container>
+        <h2 className="bold center">Projects</h2>
         <Card>
-          <Image src={womanWorking} alt="a woman typing on a macbook"></Image>
-          <h3>
-            Aute Lorem adipisicing ad ea amet laboris occaecat sint esse
-            excepteur aute.
-          </h3>
-          <p>
-            Sint aliquip laborum excepteur sunt pariatur enim eiusmod amet
-            ipsum.
+          <span
+            sx={{
+              borderRadius: '50px',
+            }}
+          >
+            <Image
+              src={Images.petwatch}
+              alt="A desk showing a desktop Mac and the 24Petwatch website"
+            />
+          </span>
+          <h3>A major migragion from Drupal into AEM Cloud</h3>
+          <p className="sans-serif">
+            Front-end rebrands and migration projects via AEM Cloud templates,
+            theming, components, authoring, policies / policy creation for
+            24Petwatch.com, 24Petcare.com, and 24Pet.com
           </p>
         </Card>
         <Card>

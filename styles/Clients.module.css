@@ -1,4 +1,4 @@
-.clients {
+/* .clients {
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -9,13 +9,13 @@
   height: 100px;
   width: 2400px;
   margin: 0 auto;
-  /* animation: slide 30s linear infinite; */
+  animation: slide 30s linear infinite;
   background-color: white;
-}
+} */
 
-.relative {
+/* .relative {
   position: relative;
-}
+} */
 
 .positionCANLOGO,
 .positionCAPLOGO,
@@ -25,14 +25,16 @@
 .positionMAYLOGO,
 .positionMCGLOGO,
 .positionWPLOGO {
-  padding-right: 30px;
+  padding: 0 45px;
+  width: 200px;
+  height: 100px;
 }
 
-@keyframes slide {
+/* @keyframes slide {
   0% {
     transform: translate3d(0, 0, 0);
   }
   100% {
     transform: translate3d(-2400px, 0, 0); /* The image width */
-  }
-}
+/* } 
+} */

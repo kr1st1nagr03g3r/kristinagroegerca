@@ -3,18 +3,20 @@
 }
 
 /* 146px from top */
-.hero {
+/* .hero {
   display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: space-between !important;
   align-items: center;
-  padding-top: 100px;
+
   padding-bottom: 60px;
+} */
+
+.header {
 }
 
 @media only screen and (max-width: 1200px) {
   .hero {
-    padding-top: 100px !important;
   }
 }
