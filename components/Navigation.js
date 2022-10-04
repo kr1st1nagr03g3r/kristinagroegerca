@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Container } from '@mui/material'
 import Link from 'next/link'
-import styles from '../styles/navigation.module.css'
+import styles from '../styles/Navigation.module.css'
 import { useState } from 'react'
 import NavLinks from '../components/NavLinks'
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded'
