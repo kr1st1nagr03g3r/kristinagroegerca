@@ -126,6 +126,14 @@ small,
   text-align: center;
 }
 
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
 .rounded {
   border-radius: 50px;
 }
@@ -176,5 +184,31 @@ small,
   }
   .desktop {
     display: none;
+  }
+
+  h1 {
+    margin-top: 0;
+    font-size: 2.441rem;
+  }
+
+  h2 {
+    font-size: 1.953rem;
+  }
+
+  h3 {
+    font-size: 1.563rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  h5 {
+    font-size: 1.15rem;
+  }
+
+  p,
+  a {
+    font-size: 0.8rem;
   }
 }
