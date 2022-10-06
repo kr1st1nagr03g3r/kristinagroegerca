@@ -33,7 +33,6 @@ body {
   overscroll-behavior-y: none;
   background-color: ghostwhite;
   font-size: 100%; /*16px*/
-  /* background: linear-gradient(to right, rgb(18, 194, 233), rgb(196, 113, 237), rgb(246, 79, 89)) */
 }
 
 body {
@@ -127,6 +126,10 @@ small,
   text-align: center;
 }
 
+.rounded {
+  border-radius: 50px;
+}
+
 .buttons {
   display: flex !important;
   flex-direction: row !important;
@@ -156,6 +159,15 @@ small,
 
 .desktop {
   display: block;
+}
+
+.rainbow {
+  background: linear-gradient(
+    to right,
+    rgb(18, 194, 233),
+    rgb(196, 113, 237),
+    rgb(246, 79, 89)
+  ) !important;
 }
 
 @media only screen and (max-width: 900px) {

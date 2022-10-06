@@ -1,0 +1,25 @@
+.nav {
+  background: white;
+  height: 100px;
+  display: flex;
+  z-index: 10;
+  position: fixed !important;
+}
+
+.navInner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home,
+.work,
+.about {
+  padding-right: 15px;
+}
+
+.contact {
+  padding-right: 0px !important;
+}
