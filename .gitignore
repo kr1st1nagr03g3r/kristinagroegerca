@@ -36,3 +36,5 @@ package-lock.json
 /*.json
 .vscode
 /.vscode
+.env
+/.env
