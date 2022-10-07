@@ -325,9 +325,9 @@ h2.fadeIn {
   .boxWrapper02 {
     width: 100%;
   }
-  /* .container {
+  .container {
     height: 600px;
-  } */
+  }
   .content {
     align-items: center;
   }
