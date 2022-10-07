@@ -41,6 +41,7 @@ export default function Hero() {
               className="buttons"
               sx={{
                 textAlign: 'center',
+                textTransform: 'none',
               }}
             >
               Have a Look&nbsp;

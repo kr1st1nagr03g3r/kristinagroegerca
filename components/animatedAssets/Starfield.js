@@ -5,9 +5,9 @@ import Container from '@mui/material/Container'
 import Logos from './Logos.js'
 
 export default function Starfield({}) {
-  const props = {
-    buttontext: 'see more',
-  }
+  // const props = {
+  //   buttontext: 'see more',
+  // }
 
   return (
     <>
@@ -76,7 +76,7 @@ export default function Starfield({}) {
               </h2>
               <div className={styles.button}>
                 <Button className={` buttons ${styles.buttons}`} href="/work">
-                  <p className="white">{props.buttontext}</p>
+                  See More
                 </Button>
               </div>
             </div>
