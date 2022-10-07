@@ -44,7 +44,7 @@ export default function Starfield({}) {
           <span className={styles.star}>.</span>
         </section>
         <Container
-          maxWidth="md"
+          maxWidth="lg"
           className={styles.wrapper}
           sx={{
             display: 'flex',
