@@ -16,7 +16,7 @@ export default function Starfield({}) {
       margin: 0px;
       }`}</style>
       <Container maxWidth={true} className={styles.container}>
-        <Container maxWidth="lg">
+        <Container maxWidth="md">
           <section>
             <span className={styles.star}>.</span>
             <span className={styles.star}>.</span>
