@@ -54,4 +54,7 @@
   .navAnimateSmall {
     display: none !important;
   }
+  .statusElement {
+    padding-right: 0px;
+  }
 }
