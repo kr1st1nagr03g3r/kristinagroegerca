@@ -31,6 +31,12 @@ export default function Home() {
 
       <Clientele />
 
+      <span
+        id="projects"
+        sx={{
+          marginTop: '45px',
+        }}
+      ></span>
       <Container>
         <h2 className="bold center">Projects</h2>
         <Card>
