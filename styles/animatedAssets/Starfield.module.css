@@ -167,10 +167,12 @@ h2.fadeIn {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  /* height: 50vh; */
   background: #000;
   color: white;
   text-align: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .content {
@@ -318,17 +320,17 @@ h2.fadeIn {
 
 @media only screen and (max-width: 900px) {
   .wrapper {
-    flex-direction: column;
+    flex-direction: column !important;
   }
   .content,
   .boxWrapper01,
   .boxWrapper02 {
-    width: 100%;
+    width: 100% !important;
   }
-  .container {
-    height: 600px;
-  }
+  /* .container {
+    height: 600px !important;
+  } */
   .content {
-    align-items: center;
+    align-items: center !important;
   }
 }
