@@ -155,6 +155,9 @@ export default function Logos() {
             height: 25px;
             cursor: pointer !important;
           }
+          .align {
+            padding-bottom: 30px;
+          }
         }
       `}</style>
 

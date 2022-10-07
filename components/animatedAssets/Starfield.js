@@ -11,6 +11,10 @@ export default function Starfield({}) {
 
   return (
     <>
+      <style sx>{`
+      p.white {
+      margin: 0px;
+      }`}</style>
       <Container maxWidth={true} className={styles.container}>
         <section>
           <span className={styles.star}>.</span>
@@ -51,7 +55,7 @@ export default function Starfield({}) {
             position: 'relative',
           }}
         >
-          <Box sx={{ width: '50%' }} className={styles.boxWrapper}>
+          <Box sx={{ width: '50%' }} className={styles.boxWrapper02}>
             <Logos />
           </Box>
           <Box
@@ -62,7 +66,7 @@ export default function Starfield({}) {
               justifyContent: 'center',
               alignItems: 'flex-end',
             }}
-            className={styles.boxWrapper}
+            className={styles.boxWrapper01}
           >
             <div className={styles.content}>
               <h2 className="font-serif white right">
@@ -71,7 +75,7 @@ export default function Starfield({}) {
               </h2>
               <div className={styles.button}>
                 <Button className={` buttons ${styles.buttons}`} href="/work">
-                  {props.buttontext}
+                  <p className="white">{props.buttontext}</p>
                 </Button>
               </div>
             </div>
