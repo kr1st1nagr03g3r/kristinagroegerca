@@ -167,10 +167,12 @@ h2.fadeIn {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  /* height: 50vh; */
   background: #000;
   color: white;
   text-align: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .content {
@@ -325,9 +327,9 @@ h2.fadeIn {
   .boxWrapper02 {
     width: 100% !important;
   }
-  .container {
+  /* .container {
     height: 600px !important;
-  }
+  } */
   .content {
     align-items: center !important;
   }
