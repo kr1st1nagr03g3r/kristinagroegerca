@@ -16,72 +16,71 @@ export default function Starfield({}) {
       margin: 0px;
       }`}</style>
       <Container maxWidth={true} className={styles.container}>
-        <Container maxWidth="md">
-          <section>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-            <span className={styles.star}>.</span>
-          </section>
-          <Container
-            className={styles.wrapper}
+        <section>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+          <span className={styles.star}>.</span>
+        </section>
+        <Container
+          maxWidth="md"
+          className={styles.wrapper}
+          sx={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignContent: 'center',
+            justifyContent: 'center',
+            alignItems: 'left',
+            width: '80%',
+            position: 'relative',
+          }}
+        >
+          <Box sx={{ width: '50%' }} className={styles.boxWrapper02}>
+            <Logos />
+          </Box>
+          <Box
             sx={{
+              width: '50%',
               display: 'flex',
-              flexDirection: 'row',
-              alignContent: 'center',
+              flexDirection: 'column',
               justifyContent: 'center',
-              alignItems: 'left',
-              width: '80%',
-              position: 'relative',
+              alignItems: 'flex-end',
             }}
+            className={styles.boxWrapper01}
           >
-            <Box sx={{ width: '50%' }} className={styles.boxWrapper02}>
-              <Logos />
-            </Box>
-            <Box
-              sx={{
-                width: '50%',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'flex-end',
-              }}
-              className={styles.boxWrapper01}
-            >
-              <div className={styles.content}>
-                <h2 className="font-serif white right">
-                  I&apos;m comfortable working with a diverse range of tech and
-                  tools
-                </h2>
-                <div className={styles.button}>
-                  <Button className={` buttons ${styles.buttons}`} href="/work">
-                    <p className="white">{props.buttontext}</p>
-                  </Button>
-                </div>
+            <div className={styles.content}>
+              <h2 className="font-serif white right">
+                I&apos;m comfortable working with a diverse range of tech and
+                tools
+              </h2>
+              <div className={styles.button}>
+                <Button className={` buttons ${styles.buttons}`} href="/work">
+                  <p className="white">{props.buttontext}</p>
+                </Button>
               </div>
-            </Box>
-          </Container>
+            </div>
+          </Box>
         </Container>
       </Container>
     </>
