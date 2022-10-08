@@ -1,6 +1,7 @@
 import Navigation from '../components/Navigation'
 import HeroWork from '../components/HeroWork'
 import Clients from '../components/Clients'
+import Test from '../components/Test'
 
 export default function Work({ children }) {
   return (
@@ -8,6 +9,7 @@ export default function Work({ children }) {
       <Navigation />
       <HeroWork />
       <Clients />
+      <Test />
     </>
   )
 }
