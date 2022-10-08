@@ -1,137 +1,111 @@
 import Container from '@mui/material/Container'
-import styles from '../styles/Clients.module.css'
 import images from '../public/clients/index.js'
-import Image from 'next/image'
 import Link from 'next/link'
+import Image from 'next/image'
+import { Box } from '@mui/system'
 
 export default function Clients() {
-  {
-    return (
-      <>
-        <style jsx>{`
-          .clients {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
+  return (
+    <>
+      <style jsx>{`
+        .logoBox {
+          position: relative;
+          height: 100px;
+          width: 100px;
+          margin: 15px 30px;
+        }
+
+        @media only screen and (max-width: 900px) {
+          .logoBox {
+            margin: 15px;
           }
-        `}</style>
-        <Container sx={{ width: '75%' }}>
-          <div className="clients">
-            <div className={styles.positionCANLOGO}>
-              <Link href="/">
-                <div className={styles.canadaLogo}>
-                  <Image
-                    className="canadaLogo"
-                    width={120}
-                    height={120}
-                    src={images.canadaLogo}
-                    alt=" Canada logo"
-                  />
-                </div>
-              </Link>
-            </div>
+        }
+      `}</style>
 
-            <div className={styles.positionCAPLOGO}>
-              <Link href="/">
-                <div className={styles.capitalOneLogo}>
-                  <Image
-                    className="capitalOneLogo"
-                    width={120}
-                    height={120}
-                    src={images.capitalOneLogo}
-                    alt=" Capital One logo"
-                  />
-                </div>
-              </Link>
-            </div>
-
-            <div className={styles.positionINTLOGO}>
-              <Link href="/">
-                <div className={styles.intuitLogo}>
-                  <Image
-                    className="intuitLogo"
-                    width={120}
-                    height={120}
-                    src={images.intuitLogo}
-                    alt=" Intuit logo"
-                  />
-                </div>
-              </Link>
-            </div>
-
-            <div className={styles.positionKALOGO}>
-              <Link href="/">
-                <div className={styles.kitchenaidLogo}>
-                  <Image
-                    className="kitchenaidLogo"
-                    width={120}
-                    height={120}
-                    src={images.kitchenaidLogo}
-                    alt="Kitchenaid logo"
-                  />
-                </div>
-              </Link>
-            </div>
-
-            <div className={styles.positionLOBLOGO}>
-              <Link href="/">
-                <div className={styles.loblawsLogo}>
-                  <Image
-                    className="loblawsLogo"
-                    width={120}
-                    height={120}
-                    src={images.loblawsLogo}
-                    alt="Loblaws logo"
-                  />
-                </div>
-              </Link>
-            </div>
-
-            <div className={styles.positionMAYLOGO}>
-              <Link href="/">
-                <div className={styles.maytagLogo}>
-                  <Image
-                    className="maytagLogo"
-                    width={120}
-                    height={120}
-                    src={images.maytagLogo}
-                    alt="Maytag logo"
-                  />
-                </div>
-              </Link>
-            </div>
-
-            <div className={styles.positionMCGLOGO}>
-              <Link href="/">
-                <div className={styles.universityOfMcGillLogo}>
-                  <Image
-                    className="universityOfMcGillLogo"
-                    width={120}
-                    height={120}
-                    src={images.universityOfMcGillLogo}
-                    alt="University of McGill logo"
-                  />
-                </div>
-              </Link>
-            </div>
-
-            <div className={styles.positionWPLOGO}>
-              <Link href="/">
-                <div className={styles.whirlpoolLogo}>
-                  <Image
-                    className="whirlpoolLogo"
-                    width={120}
-                    height={120}
-                    src={images.whirlpoolLogo}
-                    alt="Whirlpool  logo"
-                  />
-                </div>
-              </Link>
-            </div>
-          </div>
-        </Container>
-      </>
-    )
-  }
+      <Container
+        maxWidth="lg"
+        disableGutters={true}
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'center',
+        }}
+      >
+        <div className="logoBox">
+          <Image
+            className="logo"
+            src={images.canadaLogo}
+            alt=" Canada logo"
+            layout="fill"
+          />
+        </div>
+        <div className="logoBox">
+          <Image
+            className="logo"
+            src={images.capitalOneLogo}
+            alt=" Canada logo"
+            layout="fill"
+          />
+        </div>
+        <div className="logoBox">
+          <Image
+            className="logo"
+            src={images.intuitLogo}
+            alt=" Canada logo"
+            layout="fill"
+          />
+        </div>
+        <div className="logoBox">
+          <Image
+            className="logo"
+            src={images.kitchenaidLogo}
+            alt=" Canada logo"
+            layout="fill"
+          />
+        </div>
+      </Container>
+      <Container
+        maxWidth="lg"
+        disableGutters={true}
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'center',
+        }}
+      >
+        <div className="logoBox">
+          <Image
+            className="logo"
+            src={images.maytagLogo}
+            alt=" Canada logo"
+            layout="fill"
+          />
+        </div>
+        <div className="logoBox">
+          <Image
+            className="logo"
+            src={images.whirlpoolLogo}
+            alt=" Canada logo"
+            layout="fill"
+          />
+        </div>
+        <div className="logoBox">
+          <Image
+            className="logo"
+            src={images.loblawsLogo}
+            alt=" Canada logo"
+            layout="fill"
+          />
+        </div>
+        <div className="logoBox">
+          <Image
+            className="logo"
+            src={images.universityOfMcGillLogo}
+            alt=" Canada logo"
+            layout="fill"
+          />
+        </div>
+      </Container>
+    </>
+  )
 }

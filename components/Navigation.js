@@ -6,7 +6,6 @@ import { useState } from 'react'
 import NavLinks from '../components/NavLinks'
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded'
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded'
-import { positions } from '@mui/system'
 
 export default function Nav({ inView }) {
   return (
@@ -40,6 +39,7 @@ export default function Nav({ inView }) {
             <span role="img" aria-label="In view">
               {/* ✅ */}
               <Container
+                disableGutters={true}
                 className={styles.navAnimateLarge}
                 sx={{ zIndex: 'tooltip' }}
               >
@@ -130,6 +130,7 @@ export function Hamburger() {
             alignItems: 'center',
             zIndex: '10',
             boxShadow: '1px 6px 10px 2px #0000001a',
+            paddingRight: '0px',
           }}
         >
           <Link href="/">

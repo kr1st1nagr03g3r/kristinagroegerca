@@ -10,7 +10,7 @@ export default function NavLinks() {
           letter-spacing: 1px;
         }
         .navItemEnd {
-          padding-right: 0px;
+          padding-right: 30px;
         }
         :hover.navItems,
         :hover.navItemEnd {
