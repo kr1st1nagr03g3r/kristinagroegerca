@@ -4,12 +4,11 @@ import Navigation from '../components/Navigation'
 import { useInView } from 'react-intersection-observer'
 import { Container } from '@mui/system'
 import Hero from '../components/Hero'
-import Card from '../components/Card'
-import Image from 'next/image'
-import Images from '../public/clients/index.js'
+import CardsHome from '../components/CardsHome'
 import womanWorking from '../public/woman-working-kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg'
 import Starfield from '../components/animatedAssets/Starfield'
 import Clientele from '../components/Clientele'
+import { Box } from '@mui/material'
 
 export default function Home() {
   // Scroll Event Listener
@@ -31,14 +30,10 @@ export default function Home() {
 
       <Clientele />
 
-      <span
-        id="projects"
-        sx={{
-          marginTop: '45px',
-        }}
-      ></span>
+      <CardsHome></CardsHome>
+
       <Container>
-        <h2 className="bold center">Projects</h2>
+        {/* <h2 className="bold center">Projects</h2>
         <Card>
           <span
             sx={{
@@ -80,7 +75,7 @@ export default function Home() {
         </h4>
         <h5>
           Reprehenderit nisi mollit cupidatat commodo aliqua consequat ut.
-        </h5>
+        </h5> */}
         <span
           className={`${styles.rocket} ${
             magicSectionIsVisible ? styles.animateRocket : ''

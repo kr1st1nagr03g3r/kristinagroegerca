@@ -9,6 +9,9 @@ export default function Clients() {
     <>
       <style jsx>{`
         .logoBox {
+          cursor: pointer;
+        }
+        .logoBox {
           position: relative;
           height: 100px;
           width: 100px;
@@ -31,39 +34,50 @@ export default function Clients() {
           justifyContent: 'center',
         }}
       >
-        <div className="logoBox">
-          <Image
-            className="logo"
-            src={images.canadaLogo}
-            alt=" Canada logo"
-            layout="fill"
-          />
-        </div>
-        <div className="logoBox">
-          <Image
-            className="logo"
-            src={images.capitalOneLogo}
-            alt=" Canada logo"
-            layout="fill"
-          />
-        </div>
-        <div className="logoBox">
-          <Image
-            className="logo"
-            src={images.intuitLogo}
-            alt=" Canada logo"
-            layout="fill"
-          />
-        </div>
-        <div className="logoBox">
-          <Image
-            className="logo"
-            src={images.kitchenaidLogo}
-            alt=" Canada logo"
-            layout="fill"
-          />
-        </div>
+        <Link href="/work">
+          <div className="logoBox">
+            <Image
+              className="logo"
+              src={images.canadaLogo}
+              alt=" Canada logo"
+              layout="fill"
+            />
+          </div>
+        </Link>
+        <Link href="/work">
+          <div className="logoBox">
+            <Image
+              className="logo"
+              src={images.capitalOneLogo}
+              alt=" Canada logo"
+              layout="fill"
+            />
+          </div>
+        </Link>
+
+        <Link href="/work">
+          <div className="logoBox">
+            <Image
+              className="logo"
+              src={images.intuitLogo}
+              alt=" Canada logo"
+              layout="fill"
+            />
+          </div>
+        </Link>
+
+        <Link href="/work">
+          <div className="logoBox">
+            <Image
+              className="logo"
+              src={images.kitchenaidLogo}
+              alt=" Canada logo"
+              layout="fill"
+            />
+          </div>
+        </Link>
       </Container>
+
       <Container
         maxWidth="lg"
         disableGutters={true}
@@ -73,38 +87,48 @@ export default function Clients() {
           justifyContent: 'center',
         }}
       >
-        <div className="logoBox">
-          <Image
-            className="logo"
-            src={images.maytagLogo}
-            alt=" Canada logo"
-            layout="fill"
-          />
-        </div>
-        <div className="logoBox">
-          <Image
-            className="logo"
-            src={images.whirlpoolLogo}
-            alt=" Canada logo"
-            layout="fill"
-          />
-        </div>
-        <div className="logoBox">
-          <Image
-            className="logo"
-            src={images.loblawsLogo}
-            alt=" Canada logo"
-            layout="fill"
-          />
-        </div>
-        <div className="logoBox">
-          <Image
-            className="logo"
-            src={images.universityOfMcGillLogo}
-            alt=" Canada logo"
-            layout="fill"
-          />
-        </div>
+        <Link href="/work">
+          <div className="logoBox">
+            <Image
+              className="logo"
+              src={images.maytagLogo}
+              alt=" Canada logo"
+              layout="fill"
+            />
+          </div>
+        </Link>
+
+        <Link href="/work">
+          <div className="logoBox">
+            <Image
+              className="logo"
+              src={images.whirlpoolLogo}
+              alt=" Canada logo"
+              layout="fill"
+            />
+          </div>
+        </Link>
+
+        <Link href="/work">
+          <div className="logoBox">
+            <Image
+              className="logo"
+              src={images.loblawsLogo}
+              alt=" Canada logo"
+              layout="fill"
+            />
+          </div>
+        </Link>
+        <Link href="/work">
+          <div className="logoBox">
+            <Image
+              className="logo"
+              src={images.universityOfMcGillLogo}
+              alt=" Canada logo"
+              layout="fill"
+            />
+          </div>
+        </Link>
       </Container>
     </>
   )

@@ -1,27 +1,46 @@
-import * as React from 'react'
-import { styled } from '@mui/material/styles'
-import Typography from '@mui/material/Typography'
-import { red, green, blue } from '@mui/material/colors'
+import MultiPanel from '../components/MultiPanel'
+import firstImage from '../public/images/one.png'
+import secondImage from '../public/images/two.png'
+import thirdImage from '../public/images/three.png'
+import fourthImage from '../public/images/three.png'
 
-const Root = styled('div')(({ theme }) => ({
-  padding: theme.spacing(1),
-  [theme.breakpoints.down('md')]: {
-    backgroundColor: red[500],
-  },
-  [theme.breakpoints.up('md')]: {
-    backgroundColor: blue[500],
-  },
-  [theme.breakpoints.up('lg')]: {
-    backgroundColor: green[500],
-  },
-}))
-
-export default function MediaQuery() {
+export default function Temp() {
   return (
-    <Root>
-      <Typography>down(md): red</Typography>
-      <Typography>up(md): blue</Typography>
-      <Typography>up(lg): green</Typography>
-    </Root>
+    <>
+      <MultiPanel
+        panelOne={{
+          icon: firstImage,
+          name: 'First',
+          alt: 'clouds',
+          header: 'Hello this is a header',
+          link: '/work',
+          buttonText: 'Learn More',
+        }}
+        panelTwo={{
+          icon: secondImage,
+          name: 'Second',
+          alt: 'clouds',
+          header: 'Hello this is a header',
+          link: '/work',
+          buttonText: 'Learn More',
+        }}
+        panelThree={{
+          icon: thirdImage,
+          name: 'Third',
+          alt: 'clouds',
+          header: 'Hello this is a header',
+          link: '/work',
+          buttonText: 'Learn More',
+        }}
+        panelFour={{
+          icon: thirdImage,
+          name: 'Fourth',
+          alt: 'clouds',
+          header: 'Hello this is a header',
+          link: '/work',
+          buttonText: 'Learn More',
+        }}
+      ></MultiPanel>
+    </>
   )
 }
