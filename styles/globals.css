@@ -153,6 +153,7 @@ small,
   text-transform: none !important;
   text-decoration: none !important;
   margin: 30px 0px !important;
+  cursor: pointer !important;
 }
 
 .buttons:hover {

@@ -1,13 +1,14 @@
-import Cardnew from '../components/Cardnew'
-import ThreePanel from '../components/ThreePanel'
+import MultiPanel from '../components/MultiPanel'
 import firstImage from '../public/images/one.png'
 import secondImage from '../public/images/two.png'
 import thirdImage from '../public/images/three.png'
+import fourthImage from '../public/images/three.png'
+import { NoEncryption } from '@mui/icons-material'
 
 export default function Temp() {
   return (
     <>
-      <ThreePanel
+      <MultiPanel
         panelOne={{
           icon: firstImage,
           name: 'First',
@@ -16,9 +17,31 @@ export default function Temp() {
           link: '/work',
           buttonText: 'Learn More',
         }}
-        panelTwo={{ icon: secondImage, content: 'Second' }}
-        panelThree={{ icon: thirdImage, content: 'Third' }}
-      ></ThreePanel>
+        panelTwo={{
+          icon: secondImage,
+          name: 'Second',
+          alt: 'clouds',
+          header: 'Hello this is a header',
+          link: '/work',
+          buttonText: 'Learn More',
+        }}
+        panelThree={{
+          icon: thirdImage,
+          name: 'Third',
+          alt: 'clouds',
+          header: 'Hello this is a header',
+          link: '/work',
+          buttonText: 'Learn More',
+        }}
+        panelFour={{
+          icon: thirdImage,
+          name: 'Fourth',
+          alt: 'clouds',
+          header: 'Hello this is a header',
+          link: '/work',
+          buttonText: 'Learn More',
+        }}
+      ></MultiPanel>
     </>
   )
 }

@@ -11,8 +11,8 @@ const Imagecss = {
   alignItems: 'center',
 }
 
-const button = {
-  cursor: 'pointer',
+const content = {
+  padding: '15px',
 }
 
 export default function Panel(props) {
@@ -26,10 +26,14 @@ export default function Panel(props) {
             style={Imagecss}
           />
         </div>
-        <h3>{props.cardData.header}</h3>
-        <p>{props.cardData.name}</p>
-        <p>{props.cardData.content}</p>
-        <Button href={props.cardData.link}>{props.cardData.buttonText}</Button>
+        <div style={content}>
+          <h3>{props.cardData.header}</h3>
+          <p>{props.cardData.name}</p>
+          <p>{props.cardData.content}</p>
+          <Button href={props.cardData.link}>
+            {props.cardData.buttonText}
+          </Button>
+        </div>
       </Card>
     </Box>
   )

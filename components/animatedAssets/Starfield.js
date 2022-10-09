@@ -5,17 +5,9 @@ import Container from '@mui/material/Container'
 import Logos from './Logos.js'
 
 export default function Starfield({}) {
-  // const props = {
-  //   buttontext: 'see more',
-  // }
-
   return (
     <>
-      <style sx>{`
-      p.white {
-      margin: 0px;
-      }`}</style>
-      <Container maxWidth={true} className={styles.container}>
+      <Container maxWidth disableGutters={true} className={styles.container}>
         <section>
           <span className={styles.star}>.</span>
           <span className={styles.star}>.</span>

@@ -3,7 +3,7 @@ import { Box } from '@mui/system'
 import Image from 'next/image'
 import Panel from './Panel'
 
-export default function ThreePanel(props) {
+export default function MultiPanel(props) {
   return (
     <Grid container>
       <Grid item>
@@ -14,6 +14,9 @@ export default function ThreePanel(props) {
       </Grid>
       <Grid item>
         <Panel cardData={props.panelThree} />
+      </Grid>
+      <Grid item>
+        <Panel cardData={props.panelFour} />
       </Grid>
     </Grid>
   )
