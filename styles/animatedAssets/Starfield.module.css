@@ -171,8 +171,7 @@ h2.fadeIn {
   background: #000;
   color: white;
   text-align: center;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding: 60px 0px;
 }
 
 .content {

@@ -9,6 +9,8 @@ const Imagecss = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
+  width: '100%',
+  maxHeight: '300px',
 }
 
 const content = {
@@ -25,9 +27,13 @@ const specialHeader = {
   marginTop: '1rem',
 }
 
+const boxStyles = {
+  maxWidth: '500px',
+}
+
 export default function Panel(props) {
   return (
-    <Box>
+    <Box style={boxStyles}>
       <Card>
         <div style={imageStyles}>
           <Image
