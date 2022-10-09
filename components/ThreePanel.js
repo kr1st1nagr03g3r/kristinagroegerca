@@ -1,4 +1,6 @@
-import { Grid } from '@mui/material'
+import { Button, Card, Grid } from '@mui/material'
+import { Box } from '@mui/system'
+import Image from 'next/image'
 import Panel from './Panel'
 
 export default function ThreePanel(props) {
