@@ -15,11 +15,17 @@ const content = {
   padding: '15px',
 }
 
+const imageStyles = {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+}
+
 export default function Panel(props) {
   return (
     <Box>
       <Card>
-        <div className="imageStyles">
+        <div style={imageStyles}>
           <Image
             src={props.cardData.icon}
             alt={props.cardData.alt}
