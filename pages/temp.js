@@ -3,7 +3,6 @@ import firstImage from '../public/images/one.png'
 import secondImage from '../public/images/two.png'
 import thirdImage from '../public/images/three.png'
 import fourthImage from '../public/images/three.png'
-import { NoEncryption } from '@mui/icons-material'
 
 export default function Temp() {
   return (

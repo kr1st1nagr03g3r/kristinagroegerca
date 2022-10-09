@@ -21,6 +21,10 @@ const imageStyles = {
   alignItems: 'center',
 }
 
+const specialHeader = {
+  marginTop: '1rem',
+}
+
 export default function Panel(props) {
   return (
     <Box>
@@ -33,12 +37,14 @@ export default function Panel(props) {
           />
         </div>
         <div style={content}>
-          <h3>{props.cardData.header}</h3>
+          <h4 style={specialHeader}>{props.cardData.header}</h4>
           <p>{props.cardData.name}</p>
           <p>{props.cardData.content}</p>
-          <Button href={props.cardData.link}>
-            {props.cardData.buttonText}
-          </Button>
+          <span style={imageStyles}>
+            <Button href={props.cardData.link}>
+              {props.cardData.buttonText}
+            </Button>
+          </span>
         </div>
       </Card>
     </Box>
