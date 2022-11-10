@@ -1,8 +1,8 @@
 import MultiPanel from '../components/MultiPanel'
-import firstImage from '../public/images/one.png'
+import firstImage from '../public/clients/24Petwatch.jpg'
 import secondImage from '../public/images/two.png'
-import thirdImage from '../public/images/three.png'
-import fourthImage from '../public/images/three.png'
+// import thirdImage from '../public/images/three.png'
+// import fourthImage from '../public/images/three.png'
 import { Container } from '@mui/system'
 import { Box } from '@mui/material'
 
