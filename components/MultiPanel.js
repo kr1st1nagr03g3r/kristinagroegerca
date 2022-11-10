@@ -19,7 +19,7 @@ export default function MultiPanel(props) {
       <Container
         style={background}
         disableGutters={true}
-        maxWidth
+        maxWidth={true}
         sx={{
           justifyContent: 'space-evenly',
         }}

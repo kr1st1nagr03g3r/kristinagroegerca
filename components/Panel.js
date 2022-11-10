@@ -10,7 +10,8 @@ const Imagecss = {
   flexDirection: 'column',
   alignItems: 'center',
   width: '100%',
-  maxHeight: '300px',
+  height: '100%',
+  // maxHeight: '300px',
 }
 
 const content = {
@@ -37,6 +38,7 @@ export default function Panel(props) {
       <Card>
         <div style={imageStyles}>
           <Image
+            layout="fill"
             src={props.cardData.icon}
             alt={props.cardData.alt}
             style={Imagecss}
