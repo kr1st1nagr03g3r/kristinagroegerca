@@ -22,8 +22,6 @@ export default function Home() {
         <link rel="icon" href="/bitten-apple.png" type="image/png" />
       </Head>
 
-      <Navigation />
-
       <Hero />
 
       <Starfield />
