@@ -39,3 +39,4 @@ package-lock.json
 .env
 /.env
 /.swc/plugins/v2
+sendgrid.env
