@@ -7,7 +7,7 @@ export default function handler(req, res) {
   const body = JSON.parse(req.body)
   console.log(body)
   const msg = {
-    to: 'me@kristinagroeger.com', // Change to your recipient
+    to: 'kristinagroeger@icloud.com', // Change to your recipient
     from: 'me@kristinagroeger.com', // Change to your verified sender
     subject: 'Sending with SendGrid is Fun',
     text: 'and easy to do anywhere, even with Node.js',
