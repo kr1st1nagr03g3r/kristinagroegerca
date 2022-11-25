@@ -253,3 +253,7 @@ small,
   display: flex;
   flex-direction: column;
 }
+
+.buffer {
+  padding-top: 160px;
+}
