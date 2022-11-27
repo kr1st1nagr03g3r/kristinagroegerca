@@ -22,7 +22,7 @@ const Hero = ({
         flexWrap: 'wrap',
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: { xs: '60px 30px 60px 30px ', lg: '60px 0 60px 0' },
+        padding: { xs: '15px 30px 60px 30px ', lg: '30px 0 60px 0' },
       }}
     >
       <Box sx={{ flex: '1' }}>
