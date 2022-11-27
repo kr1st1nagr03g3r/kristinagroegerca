@@ -6,7 +6,7 @@ const Images = {
   js: require('../home/js.svg').default,
   react: require('../home/react.svg').default,
   html: require('../home/html.svg').default,
-
+  falcon: require('../home/falcon.png').default,
   AE: require('../home/AE.svg').default,
   aem: require('../home/aem.svg').default,
   AEMCloud: require('../home/AEMCloud.svg').default,

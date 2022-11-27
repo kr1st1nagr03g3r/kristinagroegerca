@@ -1,8 +1,9 @@
 import MultiPanel from '../components/MultiPanel'
-import firstImage from '../public/clients/24Petwatch.jpg'
-import secondImage from '../public/images/two.png'
+// import firstImage from '../public/clients/petwatch.jpg'
+// import secondImage from '../public/images/two.png'
 // import thirdImage from '../public/images/three.png'
 // import fourthImage from '../public/images/three.png'
+
 import { Container } from '@mui/system'
 import { Box } from '@mui/material'
 
@@ -22,9 +23,8 @@ export default function Temp() {
         <Box style={title} sx={{ padding: '12px 0px' }}>
           <h3>Projects</h3>
         </Box>
-        <MultiPanel
+        {/* <MultiPanel
           panelOne={{
-            icon: firstImage,
             header: 'Migragion from DNN into AEM Cloud',
             name:
               'Front-end rebrands and migration projects via AEM Cloud templates,\
@@ -66,7 +66,7 @@ export default function Temp() {
             link: '/work',
             buttonText: 'Learn More',
           }}
-        ></MultiPanel>
+        ></MultiPanel> */}
         <span style={title}>
           <p>{''}</p>
         </span>

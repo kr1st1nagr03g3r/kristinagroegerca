@@ -11,6 +11,7 @@ export default function Nav({ inView }) {
   return (
     <>
       <span>
+        <div className={styles.wrapper}></div>
         <Hamburger />
 
         <div className={styles.statusElement}>

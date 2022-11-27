@@ -8,7 +8,6 @@ const Images = {
   universityOfMcGillLogo: require('../clients/universityOfMcGillLogo.svg')
     .default,
   whirlpoolLogo: require('../clients/whirlpoolLogo.svg').default,
-  petwatch: require('../clients/24Petwatch.jpg').default,
 }
 
 export default Images

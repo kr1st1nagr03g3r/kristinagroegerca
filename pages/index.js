@@ -1,14 +1,12 @@
 import Head from 'next/head'
 import styles from '../styles/animatedAssets/Animations.module.css'
-import Navigation from '../components/Navigation'
 import { useInView } from 'react-intersection-observer'
 import { Container } from '@mui/system'
 import Hero from '../components/Hero'
 import CardsHome from '../components/CardsHome'
-import womanWorking from '../public/woman-working-kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg'
 import Starfield from '../components/animatedAssets/Starfield'
 import Clientele from '../components/Clientele'
-import { Box } from '@mui/material'
+import Images from '../public/home/index.js'
 
 export default function Home() {
   // Scroll Event Listener
@@ -22,7 +20,19 @@ export default function Home() {
         <link rel="icon" href="/bitten-apple.png" type="image/png" />
       </Head>
 
-      <Hero />
+      <Hero
+        header="Front-End Developer & Designer - UIX"
+        src={Images.personWorkingFromHome}
+        alt="cool bird"
+        width="500"
+        height="500"
+        content="Hello, I'm Kristina Groeger 👋🏻.
+          I've been building and designing digital experiences for over 10
+          years. I specialize in user experience, interaction design,
+          CSS-wizardry, and accessibility."
+        buttonLink="/work"
+        buttonContent=" Have a Look&nbsp;"
+      />
 
       <Starfield />
 
